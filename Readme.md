@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Кузнецов](https://up.htmlacademy.ru/htmlcss/25/user/632633).
-* Наставник: [Валли Пепяко](https://htmlacademy.ru/profile/id90204)
+* Наставник: [Максим Клевцов](https://htmlacademy.ru/profile/maxklevtsov)
 
 ---
 
