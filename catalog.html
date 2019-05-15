@@ -7,30 +7,37 @@
   <body>
   	<header class="top-main-menu">
       <a class="top-main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-      <ul class="top-menu">
-        <li class="search-link">Поиск</li>
-        <li class="bookmark-link">Закладки: 0</li>
-        <li class="cart-link">Корзина: 0</li>
-  		<a class="button" href="#">Оформить заказ</a>
-  		<div class="top-info-about">
-  			<p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-  			<p class="top-contacts-address">+7(812) 555-05-55
-  					г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
-  		<nav class="main-nav">
-  			<a href="index.html">Главная</a>
-  			<a href="company.html">Компания</a>
-  			<a href="catalog.html">Каталог</a>
-  			<a href="news.html">Новости</a>
-  			<a href="deals.html">Спецпредложения</a>
-  			<a href="delivery.html">Доставка</a>
-  			<a href="contacts.html">Контакты</a>
-  		</nav>
+      <div class="top-bar">
+    <a class="top-main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
+        <a class="search-link" href="#">Поиск</a>
+        <a class="bookmark-link" href="#">Закладки: 0</a>
+        <a class="cart-link" href="#">Корзина: 0</a>
+      <a class="button" href="#">Оформить заказ</a>
+  </div>
+      <div class="bottom-bar">
+        <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="top-contacts-address">+7(812) 555-05-55
+            г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
+        <ul class="user-block">
+          <li class="login-button"><a href="#">Войти</a></li>
+          <li class="registration-button"><a href="#">Регистрация</a></li>
+        </ul>
+          </div>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="company.html">Компания</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="news.html">Новости</a>
+        <a href="deals.html">Спецпредложения</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
   	</header>
   	<main class="container">
       <ul class="nav-history">
           <li><a href="index.html">Главная</a></li>
           <li><a href="store.html">Каталог</a></li>
-          <li><a href="tools.html"></a>Интсрумент</li>
+          <li><a href="tools.html">Интсрумент</a></li>
           <li class="link-current">Перфораторы</li>
         </ul>
         <h2>Перфораторы</h2>
@@ -43,6 +50,7 @@
             <li>Dewalt</li>
             <li>Hitachi</li>
           </ul>
+          <h2 class="visually-hidden">Тип питания</h2>
           <ul class="item-power">
             <li>Аккумуляторные</li>
             <li>Сетевые</li>
