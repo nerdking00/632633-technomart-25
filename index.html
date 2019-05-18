@@ -10,14 +10,17 @@
       <h1 class="visually-hidden">Интернет-магазин электротоваров Техномарт</h1>
   		<div class="top-bar">
   	<a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-  			<a class="topbar__search-link" href="#">Поиск</a>
-  			<a class="topbar__bookmark-link" href="#">Закладки: 0</a>
-  			<a class="topbar__cart-link" href="#">Корзина: 0</a>
+      <form action="" method="get">
+        <input name="searching" placeholder="Искать здесь..." type="search">
+        <button type="submit">Поиск</button>
+      </form>
+  			<a class="top-bar__bookmark-link" href="#">Закладки: 0</a>
+  			<a class="top-bar__cart-link" href="#">Корзина: 0</a>
   		    <!-- Форма оформления заказа
                     Оформить заказ !-->
   </div>
   		<div class="bottom-bar">
-  			<p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+  			<p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
   			<p class="bottom-bar__address">+7(812) 555-05-55
   					г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
   			<ul class="bottom-bar__user-block">
@@ -44,20 +47,25 @@
   		 	<p class="bottom-about__delivery">
   		 	Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
   		 	<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями</p>
-  		 	<ul class="transport-company-names">
+  		 	<ul class="bottom-about__transport-company-names">
   		 		<li>Деловые линии</li>
   		 		<li>Автотрейдинг</li>
   		 		<li>ЖелДорЭкспедиция</li>
   		 	</ul>
             <h2 class="top-contants">Контакты</h2>
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
-  		 	 <span class="popup-map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19">Заблудились? Напишите нам!</span>
+  		 	 <span class="map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19">Заблудились? Напишите нам!</span>
   		 </section>
+       <div class="popup-map">
+        <form>
+          <!-- здесь будет форма комментария !-->
+        </form>
+       </div>
   	</main>
   	<footer class="footer-main">
   		<a class="bottom-main-logo" href="index.html"><img src="img/main-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
   		<nav class="bottom-main-nav">
-  			<ul class="bottom-main-nav links">
+  			<ul class="bottom-main-nav-item">
   			<li><a href="company.html">Компания</a></li>
   			<li><a href="news.html">Новости</a></li>
   			<li><a href="catalog.html">Каталог</a></li>
