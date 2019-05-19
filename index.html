@@ -10,14 +10,13 @@
       <h1 class="visually-hidden">Интернет-магазин электротоваров Техномарт</h1>
   		<div class="top-bar">
   	<a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-      <form action="" method="get">
+      <form action= "https://echo.htmlacademy.ru" method="get">
         <input name="searching" placeholder="Искать здесь..." type="search">
         <button type="submit">Поиск</button>
       </form>
   			<a class="top-bar__bookmark-link" href="#">Закладки: 0</a>
   			<a class="top-bar__cart-link" href="#">Корзина: 0</a>
-  		    <!-- Форма оформления заказа
-                    Оформить заказ !-->
+  		  <a class="top-bar__order-link" href="#">Оформить заказ</a>
   </div>
   		<div class="bottom-bar">
   			<p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -40,7 +39,7 @@
   	</header>
   	<main class="container">
   		<!-- ТО ЧТО НЕ НАДО РАЗМЕЧАТЬ ПОКА ЧТО
-				**RESERVED**
+				        **RESERVED**
   		 !-->
   		 <section class="bottom-about">
         <h2 class="bottom-about__company-label">Компания "Техномарт"</h2>
@@ -57,8 +56,24 @@
   		 	 <span class="map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19">Заблудились? Напишите нам!</span>
   		 </section>
        <div class="popup-map">
-        <form>
-          <!-- здесь будет форма комментария !-->
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="feedback-form__item">
+        <label for="name">Ваше имя:
+            <input class="feedback-form__item__half-width" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p class="feedback-form__item">
+        <label for="mail">Ваш E-Mail:
+          <input class="feedback-form__item__half-width" type="text" name="email" id="mail" placeholder="email@example.com">
+        </label>
+      </p>
+      <p class="feedback-form__item">
+        <label for="comment">Текст письма<br>
+          <textarea class="feedback-form__item__full-width" rows="10" cols="50" id="comment" placeholder="В свободной форме">
+          </textarea>
+        </label>
+      </p>
+          <button class="feedback-form__button" type="submit">Отправить</button>
         </form>
        </div>
   	</main>
