@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,7 +13,7 @@
   		<div class="top-bar">
   	<a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
       <form action= "https://echo.htmlacademy.ru" method="get">
-        <input name="searching" placeholder="Искать здесь..." type="search">
+        <input class="top-bar__searching" name="searching" placeholder="Искать здесь..." type="search">
         <button type="submit">Поиск</button>
       </form>
   			<a class="top-bar__bookmark-link" href="#">Закладки: 0</a>
@@ -21,12 +23,12 @@
   		<div class="bottom-bar">
   			<p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
   			<p class="bottom-bar__address">+7(812) 555-05-55
-  					г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
+  					<address>г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</address></p>
   			<ul class="bottom-bar__user-block">
   				<li class="bottom-bar__login-button"><a href="#">Войти</a></li>
   				<li class="bottom-bar__registration-button"><a href="#">Регистрация</a></li>
   			</ul>
-  				</div>
+  	
   		 <nav class="main__nav">
         <a class="nav__link" href="index.html">Главная</a>
         <a class="nav__link" href="company.html">Компания</a>
@@ -36,6 +38,7 @@
         <a class="nav__link" href="delivery.html">Доставка</a>
         <a class="nav__link" href="contacts.html">Контакты</a>
       </nav>
+    </div>
   	</header>
   	<main class="container">
   		<!-- ТО ЧТО НЕ НАДО РАЗМЕЧАТЬ ПОКА ЧТО
@@ -51,7 +54,8 @@
   		 		<li>Автотрейдинг</li>
   		 		<li>ЖелДорЭкспедиция</li>
   		 	</ul>
-            <h2 class="top-contants">Контакты</h2>
+        <section class="contacts">
+            <h2>Контакты</h2>
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
   		 	 <span class="map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19">Заблудились? Напишите нам!</span>
   		 </section>

@@ -1,42 +1,73 @@
-/* .top-bar{
-	width: 1200px;
-  	height: 42px;
-  	background-color: #293449;
+/*  font-family: 'Cuprum', sans-serif; 
+    font-family: 'PT Sans Narrow', sans-serif;
+*/
+body{
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  background: lightgray;
+  font-family: "Cuprum", Arial, sans-serif;
+  /* font-family: "PT Sans Narrow", Arial, sans-serif; */
 }
 
-.top-main-logo{
-	margin-left: 130px;
-	padding-top: 13px;
-	padding-bottom: 15px;
-	padding-left: 55px;
-	padding-right: 55px;
-	width: 220px;
-  	height: 47px;
-  	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  	background-color: #ee3643;
+a{
+  text-decoration: none;
 }
 
-.links li{
-	display: inline-block;
+.site-header{
+  width: 1200px;
+  height: 320px;
+  background-color: #f4f7f9;
 }
-.links a{
-	text-decoration: none;
-	width: 52px;
-  	height: 12px;
-  	font-family: Cuprum;
-  	font-size: 17px;
-  	font-weight: normal;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: 1;
-  	letter-spacing: normal;
-  	text-align: left;
+.top-bar {
+  width: 1200px;
+  height: 42px;
+  background-color: #293449;
+  border: 2px solid;
 }
 
-.bottom-main-nav{
-	width: 940px;
+.top-bar a{
+  font-size: 17px;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  background-color: lightgray;
+}
+
+.bottom-bar{
+  width: 1200px;
+  height: 320px;
+  background-color: #f4f7f9;
+  border: 2px solid;
+}
+
+.bottom-bar__description{
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.44;
+  text-align: left;
+  color: #ee3643;
+}
+
+.bottom-bar__address{
+  font-size: 21px;
+  line-height: 1;
+  text-align: center;
+  color: #ee3643;
+}
+
+.bottom-bar__address address{
+  text-align: center;
+}
+
+.main__nav{
+  width: 940px;
   height: 60px;
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
 }
-*/
+
+.bottom-about{
+  border: 2px solid;
+}
