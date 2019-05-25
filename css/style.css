@@ -110,6 +110,23 @@ a{
   color: #ee3643;
 }
 
+.bottom-bar__address{
+  text-transform: none;
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #e9292a;
+}
+
+.bottom-bar__address address{
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #32425c;
+}
+
 .main__nav a{
   color: #ffffff;
 }
