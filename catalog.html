@@ -5,24 +5,27 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-  	<header class="header-main">
+  	<header class="site-header">
+      <h1 class="visually-hidden">Интернет-магазин электротоваров Техномарт</h1>
       <div class="top-bar">
-    <a class="top-main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-        <a class="search-link" href="#">Поиск</a>
-        <a class="bookmark-link" href="#">Закладки: 0</a>
-        <a class="cart-link" href="#">Корзина: 0</a>
-      <a class="button" href="#">Оформить заказ</a>
+    <a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
+      <form action= "https://echo.htmlacademy.ru" method="get">
+        <input class="top-bar__searching" name="searching" placeholder="Искать здесь..." type="search">
+      </form>
+        <a class="top-bar__bookmark-link" href="#">Закладки: 0</a>
+        <a class="top-bar__cart-link" href="#">Корзина: 0</a>
+        <a class="top-bar__order-link" href="#">Оформить заказ</a>
   </div>
       <div class="bottom-bar">
-        <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="top-contacts-address">+7(812) 555-05-55
-            г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
-        <ul class="user-block">
-          <li class="login-button"><a href="#">Войти</a></li>
-          <li class="registration-button"><a href="#">Регистрация</a></li>
+        <p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="bottom-bar__address">+7(812) 555-05-55
+            <address>г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</address></p>
+        <ul class="bottom-bar__user-block">
+          <li class="bottom-bar__login-button"><a href="#">Войти</a></li>
+          <li class="bottom-bar__registration-button"><a href="#">Регистрация</a></li>
         </ul>
-          </div>
-      <nav class="main__nav">
+    
+       <nav class="main__nav">
         <a class="nav__link" href="index.html">Главная</a>
         <a class="nav__link" href="company.html">Компания</a>
         <a class="nav__link" href="catalog.html">Каталог</a>
@@ -31,6 +34,7 @@
         <a class="nav__link" href="delivery.html">Доставка</a>
         <a class="nav__link" href="contacts.html">Контакты</a>
       </nav>
+    </div>
     </header>
   	<main class="container">
       <ul class="nav-list">

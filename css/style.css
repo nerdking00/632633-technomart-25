@@ -2,11 +2,11 @@
     font-family: 'PT Sans Narrow', sans-serif;
 */
 body{
-  width: 1200px;
+  font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: lightgray;
-  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
   /* font-family: "PT Sans Narrow", Arial, sans-serif; */
 }
 
@@ -14,35 +14,95 @@ a{
   text-decoration: none;
 }
 
-.site-header{
-  width: 1200px;
-  height: 320px;
-  background-color: #f4f7f9;
-}
-.top-bar {
-  width: 1200px;
-  height: 42px;
+.top-bar{
   background-color: #293449;
-  border: 2px solid;
 }
 
-.top-bar a{
-  font-size: 17px;
+.top-bar__searching{
   line-height: 1.06;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  background-color: lightgray;
+}
+
+.button{
+  line-height: 1.06;
+  text-align: left;
+  color: #ffffff;
+}
+
+.cart-link:hover,
+.bookmark-link:hover{
+  background-color: #212a3a;
+}
+
+.cart-link:active,
+.bookmark-link:active{
+  background-color: #161d29;
+
+}
+
+.order-link{
+  background-color: #63a63e;
+}
+
+.order-link:hover{
+  background-color: #5fbb2d;
+}
+
+.user-block{
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  list-style: none;
+}
+
+.login-button,
+.registration-button{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.login-button:hover,
+.registration-button:hover{
+  color: #ee3643;
+}
+
+.login-button:active,
+.registration-button:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.top-bar__main-logo{
+  background-color: #ee3643;
+}
+
+.top-bar__main-logo:hover{
+  background-color: #ca2c37;
+}
+
+.top-bar__main-logo:active{
+  background-color: #ba2732;
+}
+
+.top-bar__searching{
+  background-color: #293449;
+}
+
+.main__nav{
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
 }
 
 .bottom-bar{
-  width: 1200px;
-  height: 320px;
-  background-color: #f4f7f9;
-  border: 2px solid;
+  background-color: #f1f5f7;
 }
 
 .bottom-bar__description{
+  text-transform: none;
   font-size: 16px;
   font-style: italic;
   line-height: 1.44;
@@ -50,24 +110,15 @@ a{
   color: #ee3643;
 }
 
-.bottom-bar__address{
-  font-size: 21px;
-  line-height: 1;
-  text-align: center;
-  color: #ee3643;
+.main__nav a{
+  color: #ffffff;
 }
 
-.bottom-bar__address address{
-  text-align: center;
+.main__nav a:hover{
+  background-color: #293449;
 }
 
-.main__nav{
-  width: 940px;
-  height: 60px;
-  box-shadow: inset 0px -5px 0 0 #293449;
-  background-color: #32425c;
-}
-
-.bottom-about{
-  border: 2px solid;
+.main__nav a:active{
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
 }
