@@ -338,3 +338,7 @@ a{
   text-align: center;
   color: #32425c;
 }
+
+.added{
+  display: none;
+}
