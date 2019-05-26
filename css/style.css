@@ -14,6 +14,10 @@ a{
   text-decoration: none;
 }
 
+.feedback-form{
+  display: none;
+}
+
 .top-bar{
   background-color: #293449;
 }
@@ -95,6 +99,7 @@ a{
 .main__nav{
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
+  color: #ffffff;
 }
 
 .bottom-bar{
@@ -115,11 +120,11 @@ a{
   font-size: 21px;
   line-height: 1;
   letter-spacing: 0.4px;
-  text-align: left;
+  text-align: center;
   color: #e9292a;
 }
 
-.bottom-bar__address address{
+.address{
   text-transform: none;
   font-size: 14px;
   line-height: 1.71;
@@ -138,4 +143,198 @@ a{
 .main__nav a:active{
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
+}
+
+.container{
+  background-color: #ffffff;
+}
+
+.bottom-about__company-label{
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.bottom-about__delivery,
+.how-to-find{
+  text-transform: none;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: #000000;
+}
+
+.bottom-about__transport-company-names,
+.bottom-about__contacts{
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.bottom-about__more-info,
+.lost{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #ee3643;
+}
+
+.footer-top{
+  background-color: #32425c;
+}
+
+.bottom-main-logo{
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.bottom-main-nav a{
+    color: #f1f5f7;
+}
+
+.bottom-secondary-nav a{
+  color: #ffd180;
+}
+
+.bottom-contacts{
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #f3f7f9;
+}
+
+.footer-bottom{
+  background-color: #293449;
+}
+
+.copyrights{
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.social{
+  list-style: none;
+}
+
+.dev-button{
+  color: #ffd180;
+}
+
+/* catalog.css*/
+
+.breadcrumbs{
+  color: black;
+  list-style: none;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.breadcrumbs-item{
+  color: black;
+  background-color: #ffffff;
+}
+
+.catalog-container{
+  background-color: #ffffff;
+}
+
+.catalog-container h2{
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+}
+
+.item-manufacturer,
+.item-power{
+  font-family: PTSans;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: left;
+  color: gray;
+}
+
+.filters fieldset{
+  border: none;
+}
+
+.filters legend{
+  font-family: PTSans;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black);
+}
+
+.catalog-list-item{
+  list-style: none;
+  text-transform: none;
+  font-family: PTSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: center;
+  color: black;
+}
+
+.button__buy{
+  text-transform: uppercase;
+  background-color: #63a63e;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button__bookmark{
+  text-transform: uppercase;
+  border: solid 3px #63a63e;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32425c;
 }

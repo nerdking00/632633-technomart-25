@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="site-header">
@@ -12,18 +15,19 @@
       <form action= "https://echo.htmlacademy.ru" method="get">
         <input class="top-bar__searching" name="searching" placeholder="Искать здесь..." type="search">
       </form>
-        <a class="top-bar__bookmark-link" href="#">Закладки: 0</a>
-        <a class="top-bar__cart-link" href="#">Корзина: 0</a>
-        <a class="top-bar__order-link" href="#">Оформить заказ</a>
+        <a class="button bookmark-link" href="#">Закладки: 0</a>
+        <a class="button cart-link" href="#">Корзина: 0</a>
+        <a class="button order-link" href="#">Оформить заказ</a>
   </div>
       <div class="bottom-bar">
         <p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="bottom-bar__address">+7(812) 555-05-55
-            <address>г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</address></p>
-        <ul class="bottom-bar__user-block">
-          <li class="bottom-bar__login-button"><a href="#">Войти</a></li>
-          <li class="bottom-bar__registration-button"><a href="#">Регистрация</a></li>
-        </ul>
+        <div class="bottom-bar__address">+7(812) 555-05-55
+            <p class="address">г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
+          </div>
+        <p class="user-block">
+          <a class="button login-button" href="#">Войти</a>
+          <a class="button registration-button" href="#">Регистрация</a>
+        </p>
     
        <nav class="main__nav">
         <a class="nav__link" href="index.html">Главная</a>
@@ -36,23 +40,25 @@
       </nav>
     </div>
     </header>
-  	<main class="container">
-      <ul class="nav-list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Главная</a>
+  	<main class="catalog-container">
+      <ul class="breadcrumbs">
+          <li>
+            <a class="breadcrumbs-item" href="index.html">Главная</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="store.html">Каталог</a>
+          <li>
+            <a class="breadcrumbs-item" href="store.html">Каталог</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="tools.html">Интсрумент</a>
+          <li>
+            <a class="breadcrumbs-item" href="tools.html">Интсрумент</a>
           </li>
-          <li class="nav__item nav__item--current">Перфораторы</li>
+          <li class="breadcrumbs-item-current">Перфораторы</li>
         </ul>
         <h2>Перфораторы</h2>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Производители: </legend>
           <ul class="item-manufacturer">
             <li><input class="item-manufacturer__brand" type="checkbox" name="bosch">Bosch</li>
             <li><input class="item-manufacturer__brand" type="checkbox" name="inter">Интерскол</li>
@@ -60,7 +66,9 @@
             <li><input class="item-manufacturer__brand" type="checkbox" name="dewalt">Dewalt</li>
             <li><input class="item-manufacturer__brand" type="checkbox" name="hitachi">Hitachi</li>
           </ul>
-          <h2 class="visually-hidden">Тип питания</h2>
+        </fieldset>
+         <fieldset>
+          <legend>Питание: </legend>
           <ul class="item-power">
             <label for="acc">
             <li><input class="item-power__type" type="checkbox" id="acc" name="acc">Аккумуляторные</li>
@@ -69,6 +77,7 @@
             <li><input class="item-power__type" type="checkbox" id="power" name="power">Сетевые</li>
           </label>
           </ul>
+          </fieldset>
           <button class="button-show">Показать</button>
         </form>
         </section>
@@ -89,8 +98,8 @@
             <h3 class="catalog-list-item-name">Перфоратор BOSCH BFG 2000</h3>
               <img src="img/item-bfg2000.jpg" width="150" height="150" alt="перфоратор BFG2000">
               <p class="catalog-list-item-price"><del>22500 Р.</del><span>12500 Р.</span></p>
-              <div class="button__buy"></div>
-              <div class="button__bookmark"></div>
+              <a class="button__buy" href="#">Купить</a>
+              <a class="button__bookmark" href="#">Закладки</a>
               <span class="new-icon">new</span>
             </li>
             <li class="catalog-list-item">
@@ -135,34 +144,36 @@
         </section>
   		</main>
   	<footer class="footer-main">
-  		<a class="bottom-main-logo" href="index.html"><img src="img/main-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
-  		<nav class="bottom-main-nav">
-  			<a href="company.html">Компания</a>
-  			<a href="news.html">Новости</a>
-  			<a href="catalog.html">Каталог</a>
-  			<a href="delivery.html">Доставка</a>
-  			<a href="contacts.html">Контакты</a>
-  		</nav>
-  		<nav class="bottom-secondary-nav">
-  			<a href="materials.html">Материалы</a>
-  			<a href="techics.html">Техника</a>
-  			<a href="tools.html">Инструмент</a>
-  			<a href="deals.html">Спецпредложения</a>
-  		</nav>
-  		<p class="bottom-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br> +7 (812) 555-05-55</p>
-  		<ul>
-        	<li><a class="social-button-vk" href="">Вконтакте</a></li>
-        	<li><a class="social-button-fb" href="">Фейсбук</a></li>
-        	<li><a class="social-button-inst" href="">Инстаграм</a></li>
+      <div class="footer-top">
+      <a class="bottom-main-logo" href="index.html"><img src="img/main-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
+      <ul class="bottom-main-nav">
+        <li><a href="company.html">Компания</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="bottom-secondary-nav">
+        <li><a class="botton-nav" href="materials.html">Материалы</a></li>
+        <li><a class="botton-nav" href="techics.html">Техника</a></li>
+        <li><a class="botton-nav" href="tools.html">Инструмент</a></li>
+        <li><a class="botton-nav" href="deals.html">Спецпредложения</a></li>
+      </ul>
+      <p class="bottom-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br> +7 (812) 555-05-55</p>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyrights">© 2010–2019 Компания «Техномарт»
+          Все права защищены</p>
+        <ul class="social">
+          <li><a class="social button-vk" href="">Вконтакте</a></li>
+          <li><a class="social button-fb" href="">Фейсбук</a></li>
+          <li><a class="social button-inst" href="">Инстаграм</a></li>
         </ul>
-        	<p class="feedback">
-            <b>Обратная связь:</b>
-        	<a class="dev-button" href="">mail@htmlacademy.ru</a>
-        </p>
-        <p class="developer">
-        	<b>Разработано -</b>
-        	<a class="dev-button" href="">HTML Academy</a>
-        </p>
-  	</footer>
+          <b>Обратная связь:</b>
+          <a class="dev-button" href="">mail@htmlacademy.ru</a>
+          <b>Разработано -</b>
+          <a class="dev-button" href="">HTML Academy</a>
+        </div>
+    </footer>
   </body>
 </html>

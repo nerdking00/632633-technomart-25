@@ -21,8 +21,9 @@
   </div>
   		<div class="bottom-bar">
   			<p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-  			<p class="bottom-bar__address">+7(812) 555-05-55
-  					<address>г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</address></p>
+  			<div class="bottom-bar__address">+7(812) 555-05-55
+  					<p class="address">г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
+          </div>
         <p class="user-block">
   				<a class="button login-button" href="#">Войти</a>
   				<a class="button registration-button" href="#">Регистрация</a>
@@ -43,9 +44,11 @@
   		<!-- ТО ЧТО НЕ НАДО РАЗМЕЧАТЬ ПОКА ЧТО
 				        **RESERVED**
   		 !-->
-  		 <section class="bottom-about">
+  		 
+       <div class="bottom-about"> 
         <h2 class="bottom-about__company-label">Компания "Техномарт"</h2>
-  		 	<p class="bottom-about__delivery">
+      <section class="bottom-about__delivery">
+  		 	<p>
   		 	Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
   		 	<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями</p>
   		 	<ul class="bottom-about__transport-company-names">
@@ -53,12 +56,14 @@
   		 		<li>Автотрейдинг</li>
   		 		<li>ЖелДорЭкспедиция</li>
   		 	</ul>
-        <section class="contacts">
+       </section>
+        <a class="bottom-about__more-info" href="#">Подробнее о компании</a>
+        <section class="bottom-about__contacts">
             <h2>Контакты</h2>
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
-  		 	 <span class="map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19">Заблудились? Напишите нам!</span>
+  		 	 <span class="map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"><a class="lost" href="#">Заблудились? Напишите нам!</a></span>
+
   		 </section>
-       <div class="popup-map">
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
         <p class="feedback-form__item">
         <label for="name">Ваше имя:
@@ -81,30 +86,36 @@
        </div>
   	</main>
   	<footer class="footer-main">
+      <div class="footer-top">
   		<a class="bottom-main-logo" href="index.html"><img src="img/main-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
-  		<nav class="bottom-main-nav">
-  			<ul class="bottom-main-nav-item">
+  		<ul class="bottom-main-nav">
   			<li><a href="company.html">Компания</a></li>
   			<li><a href="news.html">Новости</a></li>
   			<li><a href="catalog.html">Каталог</a></li>
   			<li><a href="delivery.html">Доставка</a></li>
   			<li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="bottom-secondary-nav">
   			<li><a class="botton-nav" href="materials.html">Материалы</a></li>
   			<li><a class="botton-nav" href="techics.html">Техника</a></li>
   			<li><a class="botton-nav" href="tools.html">Инструмент</a></li>
   			<li><a class="botton-nav" href="deals.html">Спецпредложения</a></li>
   		</ul>
-  		</nav>
   		<p class="bottom-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br> +7 (812) 555-05-55</p>
-  		<ul>
-        	<li><a class="social-button-vk" href="">Вконтакте</a></li>
-        	<li><a class="social-button-fb" href="">Фейсбук</a></li>
-        	<li><a class="social-button-inst" href="">Инстаграм</a></li>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyrights">© 2010–2019 Компания «Техномарт»
+          Все права защищены</p>
+  		  <ul class="social">
+        	<li><a class="social button-vk" href="">Вконтакте</a></li>
+        	<li><a class="social button-fb" href="">Фейсбук</a></li>
+        	<li><a class="social button-inst" href="">Инстаграм</a></li>
         </ul>
         	<b>Обратная связь:</b>
         	<a class="dev-button" href="">mail@htmlacademy.ru</a>
         	<b>Разработано -</b>
         	<a class="dev-button" href="">HTML Academy</a>
+        </div>
   	</footer>
   </body>
 </html>
