@@ -15,17 +15,21 @@ a{
   text-decoration: none;
 }
 
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
 .feedback-form{
   display: none;
 }
 
 .top-bar{
   display: flex;
-  height: 42px;
-  background-color: #293449;
 }
 
 .top-bar__searching{
+  width: 197px;
   line-height: 1.06;
   text-align: left;
   color: #ffffff;
@@ -88,7 +92,6 @@ a{
   padding: 13px 56px 15px 55px;
   width: 109px;
   height: 19px;
-  margin-left: 170px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
@@ -106,21 +109,27 @@ a{
 }
 
 .main__nav{
-  box-shadow: inset 0px -5px 0 0 #293449;
+  height: 12px;
+  padding-top: 22px;
+  padding-bottom: 26px;
   background-color: #32425c;
   color: #ffffff;
 }
 
 .bottom-bar{
-  background-color: #f1f5f7;
+  display: flex;
 }
 
 .bottom-bar__description{
+  margin: 0;
+  display: block;
+  padding-left: 50px;
   text-transform: none;
   font-size: 16px;
   font-style: italic;
-  line-height: 1.44;
+  line-height: 23px;
   text-align: left;
+  width: 196px;
   color: #ee3643;
 }
 
@@ -134,11 +143,17 @@ a{
 }
 
 .address{
+  margin: 0;
+  display: block;
   text-transform: none;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
   color: #32425c;
+}
+
+.nav__link{
+  margin-left: 52px;
 }
 
 .main__nav a{
@@ -154,9 +169,7 @@ a{
   background-color: #1d2739;
 }
 
-.container{
-  background-color: #ffffff;
-}
+
 
 .bottom-about__company-label{
   font-family: Cuprum;
@@ -350,4 +363,12 @@ a{
 
 .added{
   display: none;
+}
+
+.top-bar-wrapper{
+  background-color: #293449;
+}
+
+.bottom-bar-wrapper{
+  background-color: #f4f7f9;
 }
