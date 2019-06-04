@@ -155,9 +155,12 @@ a{
 }
 
 .main__nav{
-  height: 12px;
-  padding-top: 22px;
-  padding-bottom: 26px;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  font-size: 17px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #32425c;
   color: #ffffff;
 }
@@ -204,13 +207,13 @@ a{
 }
 
 .nav__link{
-  margin-left: 52px;
+  text-transform: none;
+  padding: 22px 30px 26px 30px;
 }
 
 .main__nav a{
   color: #ffffff;
 }
-
 .main__nav a:hover{
   background-color: #293449;
 }
@@ -248,13 +251,30 @@ a{
   color: #000000;
 }
 
+.middle-cantainer{
+  margin-bottom: 40px;
+}
+
 .bottom-about__delivery,
 .how-to-find{
+  display: flex;
+  flex-direction: column;
   text-transform: none;
+  margin: 0;
   font-size: 13px;
-  line-height: 1.85;
+  line-height: 24px;
   text-align: left;
   color: #000000;
+}
+
+.delivery-text,
+.how-to-find{
+  margin:0;
+  margin-bottom: 36px;
+}
+
+.delivery-text-second{
+  margin: 0;
 }
 
 
@@ -268,7 +288,7 @@ a{
 .bottom-about__contacts{
   font-family: Cuprum;
   font-size: 18px;
-  line-height: 1.11;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: left;
   color: #000000;
@@ -276,7 +296,6 @@ a{
 .bottom-about__transport-company-names {
   margin: 0;
   padding: 0;
-  margin-bottom: 37px;
 }
 .bottom-about{
   display: flex;
@@ -285,7 +304,6 @@ a{
 .more-info,
 .lost{
     margin: 0;
-    padding: 14px 59px 12px 63px;
     border-radius: 5px;
     color: #ffffff;
     font-size: 14px;
@@ -293,25 +311,89 @@ a{
     background-color: #ee3643;
 }
 
+.lost{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 12px;
+  text-align: center;
+  padding: 14px 59px 12px 63px;
+}
+
+.more-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 140px;
+  height: 12px;
+  text-align: center;
+  padding: 14px 39px 12px 40px;
+}
+
 .footer-top{
+  display: flex;
   background-color: #32425c;
 }
 
 .bottom-main-logo{
+  text-align: center;
+  padding: 20px 41px 25px 41px;
+  width: 138px;
+  height: 23px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+}
+
+.bottom-main-nav,
+.bottom-secondary-nav{
+  text-transform: none;
+  margin-left: auto;
+  display: flex;
+  list-style: none;
+}
+
+.bottom-nav-title{
+  vertical-align: top
+  text-transform: none;
+  margin-left: 60px;
+}
+
+.bottom-contacts{
+  margin: 0;
+}
+
+.footer-middle{
+  display: flex;
+
+  margin-top: 32px;
+  padding-bottom: 53px;
 }
 
 .bottom-main-nav a{
     color: #f1f5f7;
 }
 
+.bottom-secondary-nav{
+  display: flex;
+}
+
 .bottom-secondary-nav a{
   color: #ffd180;
 }
 
-.footer-bottom{
-  background-color: #293449;
+.bottom-contacts{
+  text-transform: none;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f3f7f9;
 }
 
 .copyrights{
@@ -330,6 +412,20 @@ a{
 .dev-button{
   color: #ffd180;
 }
+
+.footer-top-wrapper{
+  background-color: #32425c;
+}
+
+.footer-bottom{
+  display: flex;
+}
+
+.footer-bottom-wrapper{
+  background-color: #293449;
+}
+
+
 
 /* catalog.css*/
 
@@ -454,5 +550,11 @@ a{
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 24px;
 }
 
+.map{
+  width: 270px;
+  height: 158px;
+  margin-bottom: 74px;
+}
