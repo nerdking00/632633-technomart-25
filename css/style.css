@@ -1,4 +1,4 @@
-/*  font-family: 'Cuprum', sans-serif; 
+/*  font-family: 'Cuprum', sans-serif;
     font-family: 'PT Sans Narrow', sans-serif;
 */
 body{
@@ -292,6 +292,7 @@ a{
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  margin-left: auto;
 }
 .bottom-about__transport-company-names {
   margin: 0;
@@ -346,11 +347,22 @@ a{
   background-color: #ee3643;
 }
 
-.bottom-main-nav,
-.bottom-secondary-nav{
+.bottom-main-nav{
+  align-items: flex-end;
   text-transform: none;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   display: flex;
+  list-style: none;
+}
+
+.bottom-secondary-nav{
+  display: flex;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
   list-style: none;
 }
 
@@ -358,6 +370,12 @@ a{
   vertical-align: top
   text-transform: none;
   margin-left: 60px;
+}
+
+.footer-top-up{
+  display: flex;
+  flex-direction: column;
+  height: 193px;
 }
 
 .bottom-contacts{
@@ -377,6 +395,7 @@ a{
 
 .bottom-secondary-nav{
   display: flex;
+
 }
 
 .bottom-secondary-nav a{
@@ -397,6 +416,9 @@ a{
 }
 
 .copyrights{
+  display: flex;
+  margin: 0;
+  margin-right: 153px;
   text-transform: none;
   font-size: 16px;
   line-height: 1.13;
@@ -405,12 +427,44 @@ a{
   color: #ffffff;
 }
 
-.social{
+.footer-social{
+  display: flex;
   list-style: none;
 }
 
+.footer-social{
+  padding: 0;
+}
+
+.button-vk,
+.button-fb,
+.button-inst{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
 .dev-button{
+  text-transform: none;
+  color: #ffffff;
+  margin: 0;
+}
+
+.mail{
+  margin-left: 130px;
+}
+
+.dev{
+  margin-left: 53px;
+}
+
+.dev-button a{
   color: #ffd180;
+}
+
+.footer-social{
+  display: flex;
 }
 
 .footer-top-wrapper{
@@ -419,6 +473,8 @@ a{
 
 .footer-bottom{
   display: flex;
+  height: 72px;
+  padding-top: 32px;
 }
 
 .footer-bottom-wrapper{
