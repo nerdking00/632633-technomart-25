@@ -14,7 +14,7 @@
   		<div class="top-bar container">
   	<a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
       <form action= "https://echo.htmlacademy.ru" method="get">
-        <input class="top-bar__searching" name="searching" placeholder="Искать здесь..." type="text">
+        <input class="top-bar__searching" name="searching" placeholder="Поиск:" type="text">
       </form>
   			<a class="button bookmark-link" href="#">Закладки: <span>0</span></a>
   			<a class="button cart-link" href="#">Корзина: <span>0</span></a>
@@ -43,29 +43,31 @@
       </nav>
        </div>
   	</header>
-  	<main class="main__container">
+    <div class="main__container__wrapper">
+  	<main class="main__container container">
   		<!-- ТО ЧТО НЕ НАДО РАЗМЕЧАТЬ ПОКА ЧТО
 				        **RESERVED**
   		 !-->
   		 
        <div class="bottom-about"> 
-        <h2 class="bottom-about__company-label">Компания "Техномарт"</h2>
+        
       <section class="bottom-about__delivery">
-  		 	<p>
+        <h2 class="delivery-title">Компания "Техномарт"</h2>
+  		 	<p class="delivery-text">
   		 	Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
-  		 	<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями</p>
+  		 	<p class="delivery-text-second">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями</p>
   		 	<ul class="bottom-about__transport-company-names">
-  		 		<li>Деловые линии</li>
-  		 		<li>Автотрейдинг</li>
-  		 		<li>ЖелДорЭкспедиция</li>
+  		 		<li class="company-title">Деловые линии</li>
+  		 		<li class="company-title">Автотрейдинг</li>
+  		 		<li class="company-title">ЖелДорЭкспедиция</li>
   		 	</ul>
+        <a class="more-info" href="#">Подробнее о компании</a>
        </section>
-        <a class="bottom-about__more-info" href="#">Подробнее о компании</a>
         <section class="bottom-about__contacts">
             <h2>Контакты</h2>
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
-  		 	 <span class="map"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"><a class="lost" href="#">Заблудились? Напишите нам!</a></span>
-
+  		 	 <a class="map" href="#"><img src="img/map.png" width="330" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
+         <a class="lost" href="#">Заблудились? Напишите нам!</a>
   		 </section>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-form__item">
@@ -86,7 +88,9 @@
       </p>
           <button class="feedback-form__button" type="submit">Отправить</button>
         </form>
+      </div>
        </div>
+
   	</main>
   	<footer class="footer-main">
       <div class="footer-top">
