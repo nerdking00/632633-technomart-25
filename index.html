@@ -27,7 +27,7 @@
 
         <p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="bottom-info">
-        <a class="bottom-bar__phone">+7(812) 555-05-55</a>
+        <a class="bottom-bar__address">+7(812) 555-05-55</a>
             <p class="address">г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
           </div>
         <p class="user-block">
@@ -78,23 +78,25 @@
          <a class="lost" href="#">Заблудились? Напишите нам!</a>
   		 </section>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-form__item">
-        <label for="name">Ваше имя:
-            <input class="feedback-form__item__half-width" type="text" name="name" id="name" placeholder="Имя Фамилия">
-        </label>
-      </p>
-      <p class="feedback-form__item">
-        <label for="mail">Ваш E-Mail:
+          <fieldset class="avg">
+          <!--<fieldset> !-->
+            <div class="pole">
+          <div class="half-width">
+        <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="half-width">
+        <label for="mail">Ваш e-mail:</label>
           <input class="feedback-form__item__half-width" type="text" name="email" id="mail" placeholder="email@example.com">
-        </label>
-      </p>
-      <p class="feedback-form__item">
-        <label for="comment">Текст письма<br>
-          <textarea class="feedback-form__item__full-width" rows="10" cols="50" id="comment" placeholder="В свободной форме">
+        </div>
+      </div>
+      <div class="comment-area">
+        <label for="comment">Текст письма</label><br>
+          <textarea class="feedback-form__item__full-width" id="comment" placeholder="В свободной форме">
           </textarea>
-        </label>
-      </p>
+        </div>
           <button class="feedback-form__button" type="submit">Отправить</button>
+        </fieldset>
         </form>
       </div>
        </div>

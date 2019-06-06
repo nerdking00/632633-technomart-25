@@ -20,8 +20,62 @@ a{
   margin: 0 auto;
 }
 
-.feedback-form{
+.avg{
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 420px;
+  border: none;
+  border-top: 5px solid red;
+  padding: 45px 80px 37px 80px;
+}
+
+  /* .feedback-form{
+    border: none;
+    position: relative;
+    flex-direction: column;
+
+    width: 620px;
+    height: 420px;
+  } */
+
+/* .feedback-form fieldset{
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px; */
+}
+
+.pole{
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label{
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: none;
+  display: block;
+}
+
+.feedback-form input{
+  border: 2px solid #dee3e4;
+  width: 216px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.feedback-form legend{
   display: none;
+}
+
+.half-width{
+  display: inline-block;
+}
+
+.half-width:first-child{
+  margin-right: 16px;
 }
 
 .top-bar{
@@ -334,7 +388,7 @@ a{
 }
 
 .bottom-about h2{
-    margin:0  0 38px 0;
+  margin:0  0 38px 0;
   text-transform: uppercase;
   padding-top: 82px;
   font-family: Cuprum;
@@ -619,23 +673,43 @@ a{
   margin-left: 25px;
 }
 
-.breadcrumbs-item-jopa::before{
+.breadcrumbs-item-home::before{
   content: "";
   position: absolute;
   width: 14px;
   height: 12px;
   top:2px;
-  right: 24px;
+  right: 10px;
   background: url("../img/icon-home.svg") no-repeat 0 0;
+}
+
+.rte::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 2px;
+  left: -18px;
+  background: url("../img/icon-right-small.svg") no-repeat 0 0;
+}
+
+.breadcrumbs-item-current{
+  margin-left: 43px;
+}
+
+.breadcrumbs-item-current::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 2px;
+  left: -18px;
+  background: url("../img/icon-right-small.svg") no-repeat 0 0;
 }
 
 .breadcrumbs-item{
   color: #000000;
   background-color: #ffffff;
-}
-
-.breadcrumbs-item-current{
-  margin-left: 43px;
 }
 
 .page-title{
