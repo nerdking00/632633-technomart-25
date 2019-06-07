@@ -24,11 +24,6 @@ a{
   padding: 45px 80px 37px 80px;
 }
 
-.pole{
-  display: flex;
-  flex-direction: column;
-}
-
 .feedback-form label{
   font-family: "Cuprum";
   font-size: 18px;
@@ -249,6 +244,73 @@ a{
 .login-button:active,
 .registration-button:active{
   color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-user-block{
+  margin: 0;
+  position: relative;
+  font-family: 'Cuprum' Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: none;
+  display: flex;
+  padding: 14px 69px 11px 47px;
+}
+
+.catalog-user-block a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-user-block::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 14px;
+  background: url("../img/icon-user.svg") no-repeat 0 0;
+}
+
+.catalog-user-block::after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  right: 10px;
+  background: url("../img/icon-logout.svg") no-repeat 0 0;
+}
+
+.when-login{
+  margin-left: auto;
+}
+
+.under-login{
+  position: relative;
+  text-transform: none;
+  text-decoration: underline;
+  padding-top: 10px;
+  padding-left: 17px;
+}
+
+.my-orders:hover{
+  color: #ee3643;
+}
+
+.my-orders{
+  color: #32425c;
+  margin-right: 28px;
+}
+
+.my-account{
+  color: #32425c;
+}
+
+.my-orders::before{
+  content: "\263A";
+  position: absolute;
+  left: 100px;
+  color: #000000;
 }
 
 .visually-hidden{
