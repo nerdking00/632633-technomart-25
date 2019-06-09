@@ -14,7 +14,7 @@
      <div class="top-bar-wrapper">
       <div class="top-bar container">
     <a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-      <form action= "https://echo.htmlacademy.ru" method="get">
+      <form class="search-field" action= "https://echo.htmlacademy.ru" method="get">
         <input class="top-bar__searching" name="searching" placeholder="Поиск:" type="text">
       </form>
         <a class="button bookmark-link" href="#">Закладки: <span>0</span></a>
@@ -27,7 +27,7 @@
 
         <p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="bottom-info">
-        <a class="bottom-bar__address">+7(812) 555-05-55</a>
+        <a class="bottom-bar__phone" href="tel:+78125550555">+7(812) 555-05-55</a>
             <p class="address">г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
           </div>
         <p class="user-block">
@@ -35,19 +35,19 @@
           <a class="button registration-button" href="#">Регистрация</a>
         </p>
       </div>
-       <nav class="container">
-         <ul class="main__nav">
-        <li class="nav__link"><a href="index.html">Главная</a></li>
-        <li class="nav__link"><a href="company.html">Компания</a></li>
-        <li class="nav__link"><a href="catalog.html">Каталог</a></li>
-        <li class="nav__link"><a href="news.html">Новости</a></li>
-        <li class="nav__link"><a href="deals.html">Спецпредложения</a></li>
-        <li class="nav__link"><a href="delivery.html">Доставка</a></li>
-        <li class="nav__link"><a href="contacts.html">Контакты</a></li>
-      </ul>
-      </nav>
-       </div>
-    </header>
+      <nav class="container">
+        <ul class="main__nav">
+       <li class="nav__link"><a href="index.html">Главная</a></li>
+       <li class="nav__link"><a href="company.html">Компания</a></li>
+       <li class="nav__link"><a href="catalog.html">Каталог</a></li>
+       <li class="nav__link"><a href="news.html">Новости</a></li>
+       <li class="nav__link"><a href="deals.html">Спецпредложения</a></li>
+       <li class="nav__link"><a href="delivery.html">Доставка</a></li>
+       <li class="nav__link"><a href="contacts.html">Контакты</a></li>
+     </ul>
+     </nav>
+      </div>
+   </header>
 
   	<main class="main__container__wrapper">
       <div class="main__container container">
@@ -95,34 +95,34 @@
           <textarea class="feedback-form__item__full-width" id="comment">В свободной форме
           </textarea>
         </div>
-          <button class="feedback-form__button" type="submit">Отправить</button>
+          <input class="feedback-form__button" type="button" value="Отправить">
         </fieldset>
         </form>
       </div>
        </div>
 
   	</main>
-  	<footer class="footer-main">
+    <footer class="footer-main">
       <div class="footer-top-wrapper">
         <div class="footer-top-up">
       <div class="footer-top container">
-  		<a class="bottom-main-logo" href="index.html"><img src="img/main-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
-  		<ul class="bottom-main-nav">
-  			<li class="bottom-nav-title"><a href="company.html">Компания</a></li>
-  			<li class="bottom-nav-title"><a href="news.html">Новости</a></li>
-  			<li class="bottom-nav-title"><a href="catalog.html">Каталог</a></li>
-  			<li class="bottom-nav-title"><a href="delivery.html">Доставка</a></li>
-  			<li class="bottom-nav-title"><a href="contacts.html">Контакты</a></li>
+      <a class="bottom-main-logo" href="index.html"><img src="img/main-logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
+      <ul class="bottom-main-nav">
+        <li class="bottom-nav-title"><a href="company.html">Компания</a></li>
+        <li class="bottom-nav-title"><a href="news.html">Новости</a></li>
+        <li class="bottom-nav-title"><a href="catalog.html">Каталог</a></li>
+        <li class="bottom-nav-title"><a href="delivery.html">Доставка</a></li>
+        <li class="bottom-nav-title"><a href="contacts.html">Контакты</a></li>
       </ul>
     </div>
       <div class="footer-middle container">
         <p class="bottom-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br> +7 (812) 555-05-55</p>
       <ul class="bottom-secondary-nav">
-  			<li class="bottom-nav-title"><a href="materials.html">Материалы</a></li>
-  			<li class="bottom-nav-title"><a href="techics.html">Техника</a></li>
-  			<li class="bottom-nav-title"><a href="tools.html">Инструмент</a></li>
-  			<li class="bottom-nav-title"><a href="deals.html">Спецпредложения</a></li>
-  		</ul>
+        <li class="bottom-nav-title"><a href="materials.html">Материалы</a></li>
+        <li class="bottom-nav-title"><a href="techics.html">Техника</a></li>
+        <li class="bottom-nav-title"><a href="tools.html">Инструмент</a></li>
+        <li class="bottom-nav-title"><a href="deals.html">Спецпредложения</a></li>
+      </ul>
     </div>
     </div>
     </div>
@@ -130,16 +130,17 @@
     <div class="footer-bottom container">
       <p class="copyrights">© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
-  		  <ul class="footer-social">
-        	<li><a class="footer-social button-vk" href="">Вконтакте</a></li>
-        	<li><a class="footer-social button-fb" href="">Фейсбук</a></li>
-        	<li><a class="footer-social button-inst" href="">Инстаграм</a></li>
+        <ul class="footer-social">
+          <li><a class="footer-social button-vk" href=""><span class="visually-hidden">Vkontakte</span></a></li>
+          <li><a class="footer-social button-fb" href=""><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="footer-social button-inst" href=""><span class="visually-hidden">Instagram</span></a></li>
         </ul>
-        	<p class="dev-button mail">Обратная связь: <br>
-        	<a href="#">mail@htmlacademy.ru</a></p>
-        	<p class="dev-button dev">Разработано -<br>
-        	<a href="#">HTML Academy</a></p>
+          <p class="dev-button mail">Обратная связь: <br>
+          <a class="mail-link" href="#">mail@htmlacademy.ru</a></p>
+          <p class="dev-button dev">Разработано -<br>
+          <a class="site-link" href="#">HTML Academy</a></p>
         </div>
-  	</footer>
+        </div>
+    </footer>
   </body>
 </html>
