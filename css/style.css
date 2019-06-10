@@ -105,16 +105,25 @@ a{
   margin: 0 auto;
 }
 
-.avg{
-  display: none;
+.commentary-form{
+  padding: 0;
+  display: flex;
   border: none;
   border-top: 5px solid red;
-  padding: 45px 80px 37px 80px;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
+.user-info{
+  padding: 40px 80px 22px 80px;
+}
+
+.feedback-form{
+  width: 620px;
+}
+
 .feedback-form label{
-  font-family: "Cuprum";
+  font-family: "Cuprum" Arial, sans-serif;
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 18px;
   text-transform: none;
@@ -126,6 +135,15 @@ a{
   width: 216px;
   height: 32px;
   border-radius: 5px;
+  outline: none;
+}
+
+.commentary-form input:hover{
+  border: solid 2px #b5b5b5;
+}
+
+.commentary-form input:focus{
+ border: solid 2px #ee3643;
 }
 
 .feedback-form legend{
@@ -140,15 +158,17 @@ a{
   margin-right: 16px;
 }
 
-.comment-area label{
-  margin-top: 22px;
+.comment-area{
+  outline: none;
+  padding: 0 80px 36.8px 80px
 }
 
 .comment-area textarea{
   width: 440px;
-  height: 114px;
+  height: 112px;
+  padding: 0;
   padding-left: 16px;
-  padding-top: 13px;
+  resize: none;
   font-family: "PT Sans" Arial, sans-serif;;
   font-size: 13px;
   line-height: 18px;
@@ -167,6 +187,25 @@ input[type="button"]{
     border-radius: 5px;
     background-color: #ee3643;
     margin-top: 74px;
+}
+
+.send-button{
+  padding: 0;
+  display: block;
+  padding: 36.8px 80px;
+  background-color: #f1f1f1;
+}
+
+.feedback-form__button{
+  background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 32px;
+  width: 460px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .top-bar{
@@ -332,6 +371,10 @@ input[type="button"]{
   text-decoration: none;
 }
 
+.catalog-user-block a:active{
+  opacity: 0.3;
+}
+
 .catalog-user-block::before{
   content: "";
   position: absolute;
@@ -341,13 +384,12 @@ input[type="button"]{
   background: url("../img/icon-user.svg") no-repeat 0 0;
 }
 
-.catalog-user-block:hover::before{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  left: 14px;
+.catalog-user-block:hover:before{
   background: url("../img/icon-user-black.svg") no-repeat 0 0;
+}
+
+.catalog-user-block:active:before{
+  background: url("../img/icon-user.svg") no-repeat 0 0;
 }
 
 .catalog-user-block::after{
@@ -360,12 +402,11 @@ input[type="button"]{
 }
 
 .catalog-user-block:hover::after{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 17px;
-  right: 10px;
   background: url("../img/icon-logout-black.svg") no-repeat 0 0;
+}
+
+.catalog-user-block:active:after{
+  background: url("../img/icon-logout.svg") no-repeat 0 0;
 }
 
 .when-login{
@@ -375,13 +416,8 @@ input[type="button"]{
 .under-login{
   position: relative;
   text-transform: none;
-  /* text-decoration: underline; */
   padding-top: 10px;
   padding-left: 17px;
-}
-
-.my-orders:hover{
-  color: #ee3643;
 }
 
 .my-orders{
@@ -389,13 +425,27 @@ input[type="button"]{
   color: #32425c;
   margin-right: 28px;
 }
-.my-account:hover {
-  color:#ee3643;
+
+.my-orders:hover{
+  color: #ee3643;
 }
+
+.my-orders:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
 .my-account{
   padding: 0;
   text-decoration: underline;
   color: #32425c;
+}
+
+.my-account:hover {
+  color:#ee3643;
+}
+
+.my-account:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .under-login::before{
@@ -857,7 +907,7 @@ input[type="button"]{
   background: url("../img/icon-home.svg") no-repeat 0 0;
 }
 
-.rte::after{
+.breadcrumbs-list::after{
   content: "";
   position: absolute;
   width: 8px;

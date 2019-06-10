@@ -72,29 +72,31 @@
   		 	 <a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
          <a class="lost" href="#">Заблудились? Напишите нам!</a>
   		 </section>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="avg">
-            <div class="pole">
-          <div class="half-width">
-        <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-          </div>
-          <div class="half-width">
-        <label for="mail">Ваш e-mail:</label>
-          <input class="feedback-form__item__half-width" type="text" name="email" id="mail" placeholder="email@example.com">
-        </div>
-      </div>
-      <div class="comment-area">
-        <label for="comment">Текст письма:</label><br>
-          <textarea class="feedback-form__item__full-width" id="comment">В свободной форме
-          </textarea>
-        </div>
-          <input class="feedback-form__button" type="button" value="Отправить">
-        </fieldset>
-        </form>
       </div>
        </div>
+       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
+         <fieldset class="commentary-form">
+           <div class="user-info">
+         <div class="half-width">
+       <label for="name">Ваше имя:</label>
+           <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+         </div>
+         <div class="half-width">
+       <label for="mail">Ваш e-mail:</label>
+         <input type="text" name="email" id="mail" placeholder="email@example.com">
+       </div>
+     </div>
+     <div class="comment-area">
+       <label for="comment">Текст письма:</label>
+         <textarea class="feedback-form__item__full-width" id="comment" name="comment" placeholder="В свободной форме"></textarea>
+       </div>
+       <div class="send-button">
+         <button class="feedback-form__button" type="submit">Отправить</button>
+       </div>
+       </fieldset>
+
+       </form>
   	</main>
     <footer class="footer-main">
       <div class="footer-top-wrapper">
