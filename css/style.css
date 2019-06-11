@@ -70,9 +70,6 @@ a{
   right: 9px;
   background: url("../img/modal-close.svg") no-repeat 0 0;
 }
-.close-icon:active{
-  display: none;
-}
 
 .button-show{
   margin: 0;
@@ -114,6 +111,7 @@ a{
 }
 
 .user-info{
+  position: relative;
   padding: 40px 80px 22px 80px;
 }
 
@@ -132,7 +130,8 @@ a{
 
 .feedback-form input{
   border: 2px solid #dee3e4;
-  width: 216px;
+  padding-left: 16px;
+  width: 200px;
   height: 32px;
   border-radius: 5px;
   outline: none;
@@ -165,9 +164,10 @@ a{
 
 .comment-area textarea{
   width: 440px;
-  height: 112px;
+  height: 99px;
   padding: 0;
   padding-left: 16px;
+  padding-top: 13px;
   resize: none;
   font-family: "PT Sans" Arial, sans-serif;;
   font-size: 13px;
@@ -621,18 +621,6 @@ input[type="button"]{
   color: #000000;
 }
 
-.bottom-about__company-label{
-  font-family: Cuprum;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-}
-
 .middle-cantainer{
   margin-bottom: 40px;
 }
@@ -659,15 +647,9 @@ input[type="button"]{
   margin: 0;
 }
 
-
-.bottom-about__contacts{
-  display: flex;
-  flex-direction: column;
-  margin-left: 122px;
-}
-
-.bottom-about__transport-company-names,
-.bottom-about__contacts{
+.transport-company-names,
+.contacts{
+  position: relative;
   font-family: Cuprum;
   font-size: 18px;
   line-height: 24px;
@@ -677,11 +659,17 @@ input[type="button"]{
   margin-left: auto;
 }
 
-.bottom-about__transport-company-names {
+.transport-company-names {
   margin: 0;
   padding: 0;
-
 }
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  margin-left: 122px;
+}
+
 .bottom-about{
   display: flex;
   padding-bottom: 86px;
@@ -752,9 +740,15 @@ input[type="button"]{
 }
 
 .bottom-nav-title{
-  vertical-align: top
-  text-transform: none;
   margin-left: 60px;
+}
+
+.bottom-main-nav a:active{
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.bottom-secondary-nav a:active{
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .footer-top-up{
@@ -1244,10 +1238,22 @@ input[type="button"]{
 }
 
 .company-title {
+  position: relative;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 24px;
+  padding-left: 35px;
+}
+
+.company-title::before{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  background-color: #ee3643;
 }
 
 .map{
@@ -1298,4 +1304,9 @@ input[type="button"]{
   width: 21px;
   height: 21px;
   background: url("../img/icon-insta.svg") no-repeat 0 0;
+}
+
+.modal-map{
+  width: 940px;
+  position: relative;
 }

@@ -58,7 +58,7 @@
   		 	Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
         <div class="middle-cantainer">
   		 	<p class="delivery-text-second">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями</p>
-  		 	<ul class="bottom-about__transport-company-names">
+  		 	<ul class="transport-company-names">
   		 		<li class="company-title">Деловые линии</li>
   		 		<li class="company-title">Автотрейдинг</li>
   		 		<li class="company-title">ЖелДорЭкспедиция</li>
@@ -66,7 +66,7 @@
        </div>
         <a class="more-info" href="#">Подробнее о компании</a>
        </section>
-        <section class="bottom-about__contacts">
+        <section class="contacts">
             <h2>Контакты</h2>
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
   		 	 <a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
@@ -74,29 +74,6 @@
   		 </section>
       </div>
        </div>
-       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-
-         <fieldset class="commentary-form">
-           <div class="user-info">
-         <div class="half-width">
-       <label for="name">Ваше имя:</label>
-           <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-         </div>
-         <div class="half-width">
-       <label for="mail">Ваш e-mail:</label>
-         <input type="text" name="email" id="mail" placeholder="email@example.com">
-       </div>
-     </div>
-     <div class="comment-area">
-       <label for="comment">Текст письма:</label>
-         <textarea class="feedback-form__item__full-width" id="comment" name="comment" placeholder="В свободной форме"></textarea>
-       </div>
-       <div class="send-button">
-         <button class="feedback-form__button" type="submit">Отправить</button>
-       </div>
-       </fieldset>
-
-       </form>
   	</main>
     <footer class="footer-main">
       <div class="footer-top-wrapper">
@@ -138,5 +115,31 @@
         </div>
         </div>
     </footer>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="commentary-form">
+        <div class="user-info">
+      <div class="half-width">
+    <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="half-width">
+    <label for="mail">Ваш e-mail:</label>
+      <input type="text" name="email" id="mail" placeholder="email@example.com">
+    </div>
+    <a class="close-icon" href=""></a>
+  </div>
+  <div class="comment-area">
+    <label for="comment">Текст письма:</label>
+      <textarea class="feedback-form__item__full-width" id="comment" name="comment" placeholder="В свободной форме"></textarea>
+    </div>
+    <div class="send-button">
+      <button class="feedback-form__button" type="submit">Отправить</button>
+    </div>
+    </fieldset>
+    </form>
+    <div class="modal-map">
+      <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19">
+      <a class="close-icon" href=""></a>
+    </div>
   </body>
 </html>
