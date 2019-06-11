@@ -3,7 +3,7 @@ body{
   text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   background-color: #ffffff;
 
 }
@@ -176,7 +176,7 @@ a{
 }
 
 input[type="button"]{
-    font-family: "Cuprum";
+    font-family: "Cuprum" Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     width: 460px;
@@ -356,7 +356,7 @@ input[type="button"]{
 .catalog-user-block{
   margin: 0;
   position: relative;
-  font-family: 'Cuprum' Arial, sans-serif;
+  font-family: "Cuprum" Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -610,7 +610,7 @@ input[type="button"]{
   margin:0  0 38px 0;
   text-transform: uppercase;
   padding-top: 82px;
-  font-family: Cuprum;
+  font-family: "Cuprum" Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
   font-style: normal;
@@ -650,7 +650,7 @@ input[type="button"]{
 .transport-company-names,
 .contacts{
   position: relative;
-  font-family: Cuprum;
+  font-family: "Cuprum" Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -782,7 +782,7 @@ input[type="button"]{
 
 .bottom-contacts{
   text-transform: none;
-  font-family: 'Cuprum';
+  font-family: "Cuprum" Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1030,7 +1030,7 @@ input[type="button"]{
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum" Arial sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1043,7 +1043,7 @@ input[type="button"]{
 }
 
 .catalog-list-item-name{
-  font-family: 'PT Sans' Arial, sans-serif;
+  font-family: "PT Sans" Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
