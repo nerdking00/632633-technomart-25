@@ -12,55 +12,6 @@ a{
   text-decoration: none;
 }
 
-.added-to-cart{
-  display: block;
-  width: 620px;
-  height: 282px;
-  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
-  border-top: 5px solid #ee3643;
-}
-
-.item-added{
-  position: relative;
-  height: 160px;
-  background-color: #ffffff;
-}
-
-.item-added p{
-  font-style: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: none;
-  margin: 0;
-  padding: 75px 125px 68px 179px;
-}
-
-.item-added p::before{
-  content: "";
-  position: absolute;
-  width: 66px;
-  height: 66px;
-  left: 81px;
-  top: 55px;
-  background: url("../img/modal-check.svg") no-repeat 0 0;
-}
-
-.contninue{
-  position: relative;
-  height: 40px;
-  background-color: #f1f1f1;
-  padding: 37px 0 37px 80px;
-}
-
-.to-cart{
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #ee3643;
-  padding: 11px 62px 11px 59px;
-  border-radius: 3px;
-}
-
 .close-icon::after{
   content: "";
   position: absolute;
@@ -160,7 +111,7 @@ a{
 
 .comment-area{
   outline: none;
-  padding: 0 80px 36.8px 80px
+  padding: 0 80px 36.8px 80px;
 }
 
 .comment-area textarea{
@@ -658,7 +609,7 @@ input[type="button"]{
 }
 
 .delivery-text-second{
-  margin-bottom: 18px;
+  margin-bottom: 1px;
 }
 
 .contacts{
@@ -838,8 +789,6 @@ input[type="button"]{
 .footer-bottom-wrapper{
   background-color: #293449;
 }
-
-
 
 /* catalog.css*/
 
@@ -1031,14 +980,12 @@ input[type="button"]{
   text-align: center;
   color: #000000;
   margin: 0;
-  padding: 18px 25px 12px;
+  margin-bottom: 18px;
 }
 
 .old-price{
   font-size: 17px;
   line-height: 18px;
-  margin-top: 18px;
-  margin-bottom: 10px;
   color: #999999;
   text-decoration: line-through;
 }
@@ -1048,9 +995,8 @@ input[type="button"]{
   position: relative;
   width: 80px;
   height: 20px;
-  margin: 10px auto;
-  margin-bottom: 20px;
   padding: 10px 30px;
+  margin: 13px auto;
   color: white;
   background: #ee3643;
   border-radius: 3px;
@@ -1168,15 +1114,13 @@ input[type="button"]{
 }
 
 .catalog-list-item{
-  list-style: none;
+  display: flex;
+  flex-direction: column;
   text-transform: none;
   font-family: "PT Sans", Arial, sans-serif;;
   font-size: 18px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.11;
-  letter-spacing: normal;
+  line-height: 20px;
   text-align: center;
   color: black;
 }
@@ -1291,4 +1235,57 @@ input[type="button"]{
 .modal-map{
   width: 940px;
   position: relative;
+}
+
+.added-to-cart{
+  display: block;
+  width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 5px solid #ee3643;
+}
+
+.item-added{
+  position: relative;
+  height: 160px;
+  background-color: #ffffff;
+}
+
+.item-added p{
+  font-style: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: none;
+  margin: 0;
+  padding: 75px 125px 68px 179px;
+}
+
+.item-added p::before{
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 81px;
+  top: 55px;
+  background: url("../img/modal-check.svg") no-repeat 0 0;
+}
+
+.contninue{
+  position: relative;
+  height: 40px;
+  background-color: #f1f1f1;
+  padding: 37px 0 37px 80px;
+}
+
+.to-cart{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  padding: 11px 62px 11px 59px;
+  border-radius: 3px;
+}
+
+.bottom-nav-title:hover{
+  text-decoration: underline;
 }
