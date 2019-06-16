@@ -173,7 +173,6 @@ input[type="button"]{
 }
 
 .bookmark-link{
-  width: 78px;
   padding: 14px 28px 13px 44px;
   position: relative;
 }
@@ -434,7 +433,7 @@ input[type="button"]{
   box-sizing: border-box;
   border: none;
   background: url("../img/icon-search.svg") no-repeat 17px 50%;
-  width: 220px;
+  width: 262px;
   height: 42px;
   padding-left: 50px;
   background-color: #293449;
@@ -793,6 +792,9 @@ input[type="button"]{
 /* catalog.css*/
 
 .catalog{
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-end;
   padding: 0;
   margin: 0;
 }
@@ -886,7 +888,6 @@ input[type="button"]{
 }
 
 .catalog-list{
-  width: 700
   margin: 0;
   padding: 0;
   display: flex;
@@ -896,19 +897,14 @@ input[type="button"]{
 
 
 .catalog-list-item{
-  display: inline-block;
   position: relative;
   border: solid 1px #e5e5e5;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 218px;
-  height: 320px;
   margin-right: 20px;
   margin-bottom: 20px;
-}
-
-.catalog-list-item:nth-child(3n){
-  margin-right: 0;
 }
 
 .flag{
@@ -946,30 +942,44 @@ input[type="button"]{
   display: block;
 }
 
-.button__buy,
 .button__bookmark{
+  display: block;
+  width: 129px;
+  font-size: 14px;
+  font-family: "Cuprum", Arial sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: solid 3px #63a63e;
+  font-size: 14px;
+  padding: 7px 0;
+  margin: 0 auto;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.button__buy{
   display: block;
   width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
-  padding: 7px 0;
+  padding: 10px 0;
   background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
   border-radius:3px;
+  box-shadow: inset 0px -3px 0 0 #367315;
   color: white;
   font-size: 14px;
-  font-weight: normal;
   font-family: "Cuprum", Arial sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.button__bookmark{
-  color: #32425c;
-  background: white;
-  border-bottom-color: #63a63e;
+.button__buy:hover{
+  background-color: #5fbb2d;
+}
+
+.button__buy:active{
+  background-color: #518534;
 }
 
 .catalog-list-item-name{
@@ -1123,32 +1133,6 @@ input[type="button"]{
   line-height: 20px;
   text-align: center;
   color: black;
-}
-
-.button__buy{
-  text-transform: uppercase;
-  background-color: #63a63e;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.button__bookmark{
-  text-transform: uppercase;
-  border: solid 3px #63a63e;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: center;
-  color: #32425c;
 }
 
 .top-bar-wrapper{
