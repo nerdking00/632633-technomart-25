@@ -1,5 +1,4 @@
 body{
-
   text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
@@ -559,8 +558,8 @@ input[type="button"]{
 
 .bottom-about{
   display: flex;
-  padding-top: 82px;
-  padding-bottom: 86px;
+  margin-top: 82px;
+  margin-bottom: 86px;
 }
 
 .delivery-title{
@@ -1272,4 +1271,236 @@ input[type="button"]{
 
 .bottom-nav-title:hover{
   text-decoration: underline;
+}
+
+.main_promo{
+  padding-top: 59px;
+}
+
+.block{
+  position: relative;
+  width: 277px;
+  height: 75px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 26px;
+  padding-bottom: 22px;
+  padding-left: 23px;
+}
+
+.block_title{
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 30px;
+  font-style: bold;
+}
+
+.inside_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.promo_column_top,
+.promo_column_bottom{
+  display: flex;
+}
+
+.material_block{
+  background-color: #ffbf47;
+}
+
+.material_block::before{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-1.svg") no-repeat 0 0;
+  width: 44px;
+  height: 66px;
+  top: 31px;
+  right: 43px;
+}
+
+.material_block .new-flag{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.tools_block{
+  background-color: #3bbce3;
+}
+
+.tools_block::before{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-2.svg") no-repeat 0 0;
+  width: 75px;
+  height: 61px;
+  top: 33px;
+  right: 28px;
+}
+
+.techics_block{
+  margin: 0;
+  background-color: #dc91d8;
+}
+
+.techics_block::before{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-3.svg") no-repeat 0 0;
+  width: 78px;
+  height: 62px;
+  top: 31px;
+  right: 31px;
+}
+
+.slider_block{
+  position: relative;
+  width: 620px;
+  height: 218px;
+  background: url("../img/slide-image-1.jpg") no-repeat 0 0;
+  padding: 26px 20px 22px 25px;
+}
+
+.slider_block h3,
+.slider_block p{
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.slider_block h3{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.slider_block p{
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.slider_block::before{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-right.svg") no-repeat 0 0;
+  width: 22px;
+  height: 40px;
+  top: 114px;
+  right: 20px;
+}
+
+.slider_block::after{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-left.svg") no-repeat 0 0;
+  width: 22px;
+  height: 40px;
+  top: 114px;
+  left: 25px;
+}
+
+.catlog_open_button{
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 115px;
+}
+
+.promo_right_side{
+  align-items: flex-end;
+}
+
+.sales_block{
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #8ed78f;
+}
+
+.sales_block::before{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-4.svg") no-repeat 0 0;
+  width: 59px;
+  height: 72px;
+  top: 26px;
+  right: 45px;
+}
+
+.delivery_block{
+  margin: 0;
+  margin-left: 20px;
+  background-color: #ffc047;
+}
+
+.delivery_block::before{
+  content: "";
+  position: absolute;
+  background: url("../img/icon-5.svg") no-repeat 0 0;
+  width: 78px;
+  height: 63px;
+  top: 32px;
+  right: 31px;
+}
+
+.main_popular_goods{
+  display: flex;
+  align-items: center;
+  background-color: #f9f5f0;
+  margin-top: 53px;
+  height: 89px;
+}
+
+.main_popular_goods a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 253px;
+  height: 10px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  padding: 14px 0;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.main_popular_goods h2{
+  padding-left: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  margin: 0;
 }
