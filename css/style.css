@@ -1504,3 +1504,15 @@ input[type="button"]{
   font-weight: normal;
   margin: 0;
 }
+
+.popular_goods_item{
+  margin-top: 21px;
+}
+
+.promo_item{
+  margin-right: 18px;
+}
+
+.promo_item:nth-child(4){
+  margin-right: 0;
+}
