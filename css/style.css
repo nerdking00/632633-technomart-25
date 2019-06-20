@@ -1471,15 +1471,18 @@ input[type="button"]{
   right: 31px;
 }
 
-.main_popular_goods{
+.main_popular_goods,
+.main_popular_manufacturer{
   display: flex;
   align-items: center;
+  text-align: center;
   background-color: #f9f5f0;
   margin-top: 53px;
   height: 89px;
 }
 
-.main_popular_goods a{
+.main_popular_goods a,
+.main_popular_manufacturer a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1496,7 +1499,8 @@ input[type="button"]{
   margin-right: 24px;
 }
 
-.main_popular_goods h2{
+.main_popular_goods h2,
+.main_popular_manufacturer h2{
   padding-left: 30px;
   font-size: 30px;
   line-height: 30px;
