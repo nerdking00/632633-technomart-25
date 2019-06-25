@@ -159,8 +159,17 @@
           </div>
 
         </div>
-        <div class="main_services">
+        <div class="main_services_wrapper">
+          <div class="main_services container">
 
+            <section class="about_services">
+            <h2 class="main_services_title">Сервисы</h2>
+            <p class="main_services_text">
+              Хороший интернет-магазин отличается от плохого не только ценами!Мы
+               стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+          </section>
+          </div>
         </div>
 
       </div>
@@ -184,6 +193,7 @@
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
   		 	 <a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
          <a class="lost" href="#">Заблудились? Напишите нам!</a>
+
   		 </section>
       </div>
   	</main>
@@ -238,7 +248,7 @@
     <label for="mail">Ваш e-mail:</label>
       <input type="text" name="email" id="mail" placeholder="email@example.com">
     </div>
-    <a class="close-icon" href=""></a>
+    <button class="close-icon" type="button"><span class="visually-hidden">закрыть</span></button>
   </div>
   <div class="comment-area">
     <label for="comment">Текст письма:</label>
@@ -249,9 +259,25 @@
     </div>
     </fieldset>
     </form>
-    <div class="modal-map">
+    <div class="modal modal-map">
+      <div>
       <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19">
-      <a class="close-icon" href=""></a>
     </div>
+        <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
+    </div>
+    <script>
+      var map = document.querySelector(".map");
+      var popup = document.querySelector(".modal-map");
+      map.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+
+     var close = document.querySelector(".modal-close");
+     close.addEventListener("click", function(evt) {
+       evt.preventDefault();
+       popup.classList.remove("modal-show");
+     });
+    </script>
   </body>
 </html>
