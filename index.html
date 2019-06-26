@@ -25,7 +25,6 @@
   </div>
   <div class="bottom-bar-wrapper">
       <div class="bottom-bar container">
-
         <p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="bottom-info">
         <a class="bottom-bar__phone" href="tel:+78125550555">+7(812) 555-05-55</a>
@@ -49,7 +48,7 @@
      </nav>
       </div>
    </header>
-  	<main class="main__container__wrapper">
+  	<main>
       <div class="main_content container">
         <div class="main_promo">
           <div class="promo_column_top">
@@ -157,21 +156,38 @@
           <div class="manufacturer_block metabo">
               <a href="#"><img src="img/metabo.png" width="204" height="69" alt="Логотип производителя Metabo"></a>
           </div>
-
         </div>
         <div class="main_services_wrapper">
           <div class="main_services container">
-
             <section class="about_services">
+              <div class="about_services_title">
             <h2 class="main_services_title">Сервисы</h2>
             <p class="main_services_text">
               Хороший интернет-магазин отличается от плохого не только ценами!Мы
                стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
+          </div>
+            <div class="services_list">
+            <ul class="services_title">
+              <li class="tile delivery">Доставка</li>
+              <li class="tile waranty">Гарантия</li>
+              <li class="tile credit">Кредит</li>
+            </ul>
+            <ul class="services_description">
+              <li class="delivery_show">
+                <h4 class="delivery_show_title">Доставка</h4>
+                <p class="delivery_show_descriptiion">
+                    Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно!
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!</p></li>
+              <li class="waranty_show"><h4>Гарантия</h4></li>
+              <li class="credit_show"><h4>Кредит</h4></li>
+            </ul>
+          </div>
           </section>
           </div>
         </div>
-
       </div>
        <div class="bottom-about container">
       <section class="bottom-about__delivery">
@@ -261,7 +277,9 @@
     </form>
     <div class="modal modal-map">
       <div>
-      <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="940"
+         height="446" allowfullscreen="true"></iframe>
+      <!-- <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19"> -->
     </div>
         <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
     </div>

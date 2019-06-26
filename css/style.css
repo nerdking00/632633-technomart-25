@@ -1164,10 +1164,6 @@ input[type="button"]{
   height: 278px;
 }
 
-.main__container__wrapper{
-  background-color: #ffffff;
-}
-
 .company-title {
   position: relative;
   padding: 0;
@@ -1241,6 +1237,7 @@ input[type="button"]{
 .modal-map{
   display: none;
   position: fixed;
+  z-index: 1000;
   top: 25px;
   left: 50%;
   margin-left: -470px;
@@ -1553,6 +1550,7 @@ input[type="button"]{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 85px;
 }
 
 .manufacturer_block{
@@ -1580,14 +1578,19 @@ input[type="button"]{
   opacity: 0.3;
 }
 
-.main_services_wraper{
-  background-color: #f4f7f9;
+.services_list{
+  display: flex;
+  align-items: center;
 }
 
 .main_services{
   display: flex;
   padding-top: 68px;
   background-color: #f4f7f9;
+}
+
+.about_services_title{
+  width: 398px;
 }
 
 .main_services_title,
@@ -1599,11 +1602,90 @@ input[type="button"]{
 .about_services{
   display: flex;
   flex-direction: column;
-  width: 398px;
 }
 
 .main_services_title{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 38px;
+}
 
+.main_services_text{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.services_title{
+  padding: 0;
+  margin: 0;
+  margin-top: 74px;
+}
+
+.tile{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 23px;
+  width: 215px;
+  height: 61px;
+  background-color: #32425c;
+  border: 1px solid #293449;
+}
+
+.delivery:hover,
+.waranty:hover,
+.credit:hover{
+  background-color: #ffffff;
+  color: #32425c;
+  border: none;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+}
+
+.services_description{
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
+  width: 290px;
+}
+
+.delivery_show_title{
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.delivery_show_descriptiion{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.credit{
+
+}
+
+.delivery_show{
+  display: block;
+}
+
+.waranty_show{
+  display: none;
+}
+
+.credit_show{
+  display: none;
 }
 
 .modal-show{
