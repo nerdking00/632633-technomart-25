@@ -1578,16 +1578,33 @@ input[type="button"]{
   opacity: 0.3;
 }
 
+.main_services_wrapper{
+  background-color: #f4f7f9;
+}
+
 .services_list{
   display: flex;
   align-items: center;
+  margin-top: 74px;
 }
 
 .main_services{
-  display: flex;
+  height: 522px;
   padding-top: 68px;
   background-color: #f4f7f9;
 }
+
+.services_button{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.about_services{
+  background: url("../img/delivery.png") no-repeat 100% 220px;
+  }
 
 .about_services_title{
   width: 398px;
@@ -1597,11 +1614,6 @@ input[type="button"]{
 .main_services_text{
   padding: 0;
   margin: 0;
-}
-
-.about_services{
-  display: flex;
-  flex-direction: column;
 }
 
 .main_services_title{
@@ -1621,7 +1633,6 @@ input[type="button"]{
 .services_title{
   padding: 0;
   margin: 0;
-  margin-top: 74px;
 }
 
 .tile{
@@ -1663,13 +1674,16 @@ input[type="button"]{
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
+  margin-bottom: 34px;
 }
 
 .delivery_show_descriptiion{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
   text-transform: none;
+  margin-bottom: 23px;
 }
 
 .credit{
