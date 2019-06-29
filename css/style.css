@@ -478,8 +478,8 @@ input[type="button"]{
 }
 
 .bottom-bar{
-  padding-top: 49px;
-  padding-bottom: 44px;
+  padding-top: 35px;
+  padding-bottom: 53px;
   display: flex;
   align-items: center;
 }
@@ -503,7 +503,7 @@ input[type="button"]{
   width: 270px;
   text-transform: none;
   font-size: 21px;
-  line-height: 1;
+  line-height: 21px;
   letter-spacing: 0.4px;
   text-align: center;
   color: #e9292a;
@@ -515,7 +515,7 @@ input[type="button"]{
   position: relative;
   display: block;
   border: 3px solid #ffffff;
-  padding: 13px 42px 11px 74px;
+  padding: 6px 40px 11px 72px;
 }
 
 .bottom-bar__phone::before{
@@ -543,7 +543,7 @@ input[type="button"]{
   padding: 0 25px;
   box-shadow: inset 0px -5px 0 0 #293449;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 18px;
   display: flex;
   justify-content: center;
   background-color: #32425c;
@@ -1326,8 +1326,7 @@ input[type="button"]{
   margin-bottom: 15px;
   text-transform: none;
   font-size: 24px;
-  line-height: 30px;
-  font-style: bold;
+  line-height: 20px;
 }
 
 .inside_button{
@@ -1709,6 +1708,16 @@ input[type="button"]{
   display: none;
 }
 
+@keyframes bounce{
+  0% {transform: translateY(-2000px);}
+  40% {transform: translateY(30px);}
+  70% {transform: translateY(-20px);}
+  90% {transform: translateY(15px);}
+  100% {transform: translateY(0);}
+}
+
 .modal-show{
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.7s;
 }

@@ -209,17 +209,23 @@
             <h2 class="delivery-title">Контакты</h2>
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
   		 	 <a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
+         <div class="modal-map">
+             <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="940" height="446"></iframe>
+           <!-- <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19"> -->
+             <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
+         </div>
          <a class="lost" href="#">Заблудились? Напишите нам!</a>
+
          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
            <fieldset class="commentary-form">
              <div class="user-info">
            <div class="half-width">
          <label for="name">Ваше имя:</label>
-             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+             <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
            </div>
            <div class="half-width">
          <label for="mail">Ваш e-mail:</label>
-           <input type="text" name="email" id="mail" placeholder="email@example.com">
+           <input type="text" name="email" id="mail" placeholder="email@example.com" required>
          </div>
          <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
        </div>
@@ -229,6 +235,7 @@
          </div>
          <div class="send-button">
            <button class="feedback-form__button" type="submit">Отправить</button>
+
          </div>
          </fieldset>
          </form>
@@ -275,12 +282,6 @@
         </div>
         </div>
     </footer>
-
-    <div class="modal-map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="940" height="446"></iframe>
-      <!-- <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19"> -->
-        <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
-    </div>
     <script>
       var map = document.querySelector(".map");
       var popup = document.querySelector(".modal-map");
@@ -293,15 +294,15 @@
           evt.preventDefault();
             popup.classList.remove("modal-show");
       });
-      </script>
-      <script>
        var form = document.querySelector(".lost");
        var formPopup = document.querySelector(".feedback-form");
+       var formFocus = formPopup.querySelector("[name=name]");
           form.addEventListener("click", function(evt){
           evt.preventDefault();
             formPopup.classList.add("modal-show");
+            formFocus.focus();
       });
-        var formClose = document.querySelector(".modal-close");
+        var formClose = formPopup.querySelector(".modal-close");
           formClose.addEventListener("click", function(evt){
           evt.preventDefault();
             formPopup.classList.remove("modal-show");
