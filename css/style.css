@@ -72,7 +72,14 @@ a{
 }
 
 .feedback-form{
+  background-color: #ffffff;
+  top: 25px;
+  left: 50%;
+  margin-left: -470px;
   width: 620px;
+  position: fixed;
+  display: none;
+  z-index: 1000;
 }
 
 .feedback-form label{

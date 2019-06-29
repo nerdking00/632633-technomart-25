@@ -210,7 +210,28 @@
   		 	<p class="how-to-find">Вы можете забрать товар сами,<br>заехав в наш офис</p>
   		 	 <a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
          <a class="lost" href="#">Заблудились? Напишите нам!</a>
-
+         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+           <fieldset class="commentary-form">
+             <div class="user-info">
+           <div class="half-width">
+         <label for="name">Ваше имя:</label>
+             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+           </div>
+           <div class="half-width">
+         <label for="mail">Ваш e-mail:</label>
+           <input type="text" name="email" id="mail" placeholder="email@example.com">
+         </div>
+         <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
+       </div>
+       <div class="comment-area">
+         <label for="comment">Текст письма:</label>
+           <textarea class="feedback-form__item__full-width" id="comment" name="comment" placeholder="В свободной форме"></textarea>
+         </div>
+         <div class="send-button">
+           <button class="feedback-form__button" type="submit">Отправить</button>
+         </div>
+         </fieldset>
+         </form>
   		 </section>
       </div>
   	</main>
@@ -254,34 +275,10 @@
         </div>
         </div>
     </footer>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="commentary-form">
-        <div class="user-info">
-      <div class="half-width">
-    <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      </div>
-      <div class="half-width">
-    <label for="mail">Ваш e-mail:</label>
-      <input type="text" name="email" id="mail" placeholder="email@example.com">
-    </div>
-    <button class="close-icon" type="button"><span class="visually-hidden">закрыть</span></button>
-  </div>
-  <div class="comment-area">
-    <label for="comment">Текст письма:</label>
-      <textarea class="feedback-form__item__full-width" id="comment" name="comment" placeholder="В свободной форме"></textarea>
-    </div>
-    <div class="send-button">
-      <button class="feedback-form__button" type="submit">Отправить</button>
-    </div>
-    </fieldset>
-    </form>
-    <div class="modal modal-map">
-      <div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="940"
-         height="446" allowfullscreen="true"></iframe>
+
+    <div class="modal-map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="940" height="446"></iframe>
       <!-- <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19"> -->
-    </div>
         <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
     </div>
     <script>
@@ -291,12 +288,24 @@
         evt.preventDefault();
         popup.classList.add("modal-show");
       });
-
-     var close = document.querySelector(".modal-close");
-     close.addEventListener("click", function(evt) {
-       evt.preventDefault();
-       popup.classList.remove("modal-show");
-     });
-    </script>
+      var close = document.querySelector(".modal-close");
+          close.addEventListener("click", function(evt){
+          evt.preventDefault();
+            popup.classList.remove("modal-show");
+      });
+      </script>
+      <script>
+       var form = document.querySelector(".lost");
+       var formPopup = document.querySelector(".feedback-form");
+          form.addEventListener("click", function(evt){
+          evt.preventDefault();
+            formPopup.classList.add("modal-show");
+      });
+        var formClose = document.querySelector(".modal-close");
+          formClose.addEventListener("click", function(evt){
+          evt.preventDefault();
+            formPopup.classList.remove("modal-show");
+      });
+      </script>
   </body>
 </html>
