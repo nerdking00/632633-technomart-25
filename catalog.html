@@ -15,15 +15,16 @@
       <div class="top-bar container">
     <a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
       <form class="search-field" action= "https://echo.htmlacademy.ru" method="get">
-        <input class="top-bar__searching" name="searching" placeholder="Поиск:" type="text">
+        <!-- <label for="search_field"><span class="visually-hidden">Поле поиска</span><label> -->
+        <input class="top-bar__searching" name="searching" id="search_field" placeholder="Поиск:" type="text">
       </form>
-        <a class="button bookmark-link" href="#">В Закладки: <span>0</span></a>
+        <a class="button bookmark-link" href="#">Закладки: <span>0</span></a>
         <a class="button cart-link" href="#">Корзина: <span>0</span></a>
         <a class="button order-link" href="#">Оформить заказ</a>
       </div>
   </div>
   <div class="bottom-bar-wrapper">
-      <div class="container bottom-bar">
+      <div class="bottom-bar container">
         <p class="bottom-bar__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="bottom-info">
         <a class="bottom-bar__phone" href="tel:+78125550555">+7(812) 555-05-55</a>
@@ -39,19 +40,19 @@
         </div>
         </div>
       </div>
-       <nav class="container navigation">
-         <ul class="main__nav">
-        <li class="nav__link"><a href="index.html">Главная</a></li>
-        <li class="nav__link"><a href="company.html">Компания</a></li>
-        <li class="nav__link"><a href="catalog.html">Каталог</a></li>
-        <li class="nav__link"><a href="news.html">Новости</a></li>
-        <li class="nav__link"><a href="deals.html">Спецпредложения</a></li>
-        <li class="nav__link"><a href="delivery.html">Доставка</a></li>
-        <li class="nav__link"><a href="contacts.html">Контакты</a></li>
-      </ul>
-      </nav>
-       </div>
-    </header>
+      <nav class="container navigation">
+        <ul class="main__nav">
+       <li class="nav__link"><a href="index.html">Главная</a></li>
+       <li class="nav__link"><a href="company.html">Компания</a></li>
+       <li class="nav__link"><a href="catalog.html">Каталог</a></li>
+       <li class="nav__link"><a href="news.html">Новости</a></li>
+       <li class="nav__link"><a href="deals.html">Спецпредложения</a></li>
+       <li class="nav__link"><a href="delivery.html">Доставка</a></li>
+       <li class="nav__link"><a href="contacts.html">Контакты</a></li>
+     </ul>
+     </nav>
+      </div>
+   </header>
   	<main class="container">
       <ul class="breadcrumbs">
           <li><a class="breadcrumbs-item-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
@@ -61,7 +62,26 @@
         </ul>
         <h2 class="page-title">Перфораторы</h2>
         <div class="catalog-container">
-        <section class="filters">
+        <section class="product_filter">
+          <div class="filter">
+            <h4 class="filters_title">ФИЛЬТР: </h4>
+          </div>
+          <form class="filter_range" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+            <legend>ЦЕНА:</legend>
+            <div class="range-filter">
+            <div class="range-controls">
+            <div class="scale">
+            <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+            <label class="min-price"><input name="min-price" type="text" value="0"></label>
+            <label class="max-price"> - <input name="max-price" type="text" value="30000"></label>
+            </div>c
+            </fieldset>
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="manufaturer">
@@ -89,6 +109,9 @@
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список перфораторов</h2>
+          <div class="sort">
+            <h4 class="sort_title">СОРТИРОВКА: </h4>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-list-item">
               <img src="img/item-bfg3000.jpg" width="218" height="170" alt="перфоратор BFG3000">

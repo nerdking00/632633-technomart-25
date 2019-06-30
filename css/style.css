@@ -2,7 +2,7 @@ body{
   text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   background-color: #ffffff;
 
 }
@@ -815,11 +815,7 @@ input[type="button"]{
 /* catalog.css*/
 
 .catalog{
-  display: -ms-flex;
-  display: flex;
-  align-items: flex-end;
-  padding: 0;
-  margin: 0;
+  margin-left: 20px;
 }
 
 .breadcrumbs{
@@ -903,11 +899,6 @@ input[type="button"]{
 
 .catalog-container{
   display: flex;
-}
-
-.filters{
-  display: flex;
-  width: 220px;
 }
 
 .catalog-list{
@@ -1048,6 +1039,44 @@ input[type="button"]{
   border-left-color: #ee3643;
 }
 
+.sort_bar{
+  display: flex;
+  height: 38px;
+  margin-bottom: 20px;
+}
+.filters_title,
+.sort_title{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.filter{
+  background-color: #f7f3ec;
+  padding-left: 18px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.filter_range fieldset{
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.sort{
+  background-color: #f7f3ec;
+  padding-left: 19px;
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+
 .manufaturer{
   position: relative;
   user-select: none;
@@ -1142,10 +1171,11 @@ input[type="button"]{
   letter-spacing: normal;
 }
 
-.filters fieldset{
+.product_filter fieldset{
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .catalog-list-item{
@@ -1159,7 +1189,14 @@ input[type="button"]{
   position: relative;
   border: solid 1px #e5e5e5;
   overflow: hidden;
-  width: 218px;
+  width: 216px;
+  margin-right: 22px;
+  margin-bottom: 21px;
+}
+
+.catalog-list-item:nth-child(3n){
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .top-bar-wrapper{
