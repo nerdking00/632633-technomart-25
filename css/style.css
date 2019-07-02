@@ -1054,6 +1054,11 @@ input[type="button"]{
   margin: 0;
 }
 
+.sort_title{
+  margin-right: 119px;
+  padding-left: 19px;
+}
+
 .filter{
   background-color: #f7f3ec;
   padding-left: 18px;
@@ -1124,7 +1129,6 @@ input[type="button"]{
 
 .sort{
   background-color: #f7f3ec;
-  padding-left: 19px;
   display: flex;
   align-items: center;
   height: 38px;
@@ -1134,6 +1138,40 @@ input[type="button"]{
 .sort_types{
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sort_types_item input[type="radio"]{
+  opacity: 0;
+}
+
+.sort_types_item label{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 51px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
+}
+
+.sort_types_item label:hover{
+  text-decoration: none;
+  color: #ee3643;
+}
+
+/* .sort_types_item input[type="checkbox"] + label::after {
+    content: none;
+  }
+
+.sort_types_item input[type="checkbox"]:checked + label::after {
+        content: ""
+      } */
+
+.sort_types_item label:nth-child(3){
+  margin-right: 46px;
 }
 
 .manufaturer{
