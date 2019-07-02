@@ -1060,6 +1060,15 @@ input[type="button"]{
   height: 38px;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter_range legend{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 21px;
 }
 
 .filter_range fieldset{
@@ -1069,12 +1078,62 @@ input[type="button"]{
   margin-bottom: 25px;
 }
 
+.filter_slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f3ec;
+  height: 80px;
+  margin-bottom: 9px;
+}
+
+.range_output{
+  display: flex;
+}
+
+.range_output_left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+  width: 95px;
+  height: 38px;
+  margin-right: 30px;
+}
+
+
+.range_output_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+  width: 95px;
+  height: 38px;
+}
+
+.min_price,
+.max_price{
+  margin: 0;
+}
+
 .sort{
   background-color: #f7f3ec;
   padding-left: 19px;
   display: flex;
   align-items: center;
   height: 38px;
+  margin-bottom: 20px;
+}
+
+.sort_types{
+  display: flex;
+  list-style: none;
 }
 
 .manufaturer{

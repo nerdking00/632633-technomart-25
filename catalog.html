@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -66,21 +66,21 @@
           <div class="filter">
             <h4 class="filters_title">ФИЛЬТР: </h4>
           </div>
-          <form class="filter_range" action="https://echo.htmlacademy.ru" method="get">
+          <form class="filter_range" action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
             <fieldset>
             <legend>ЦЕНА:</legend>
-            <div class="range-filter">
-            <div class="range-controls">
-            <div class="scale">
-            <div class="bar"></div>
+            <div class="filter_slide">
+            <label for="pricecount" class="price"><input name="pricecount" id="pricecount" type="range" min="0" max="30000" step="500"></label>
+          </div>
+            <div class="range_output">
+            <div class="range_output_left">
+              <p class="min_price">0</p>
             </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
+
+            <div class="range_output_right">
+              <p class="max_price">30000</p>
             </div>
-            <div class="price-controls">
-            <label class="min-price"><input name="min-price" type="text" value="0"></label>
-            <label class="max-price"> - <input name="max-price" type="text" value="30000"></label>
-            </div>c
+          </div>
             </fieldset>
           <h2 class="visually_hidden">Фильтр товаров</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
@@ -111,6 +111,20 @@
           <h2 class="visually_hidden">Список перфораторов</h2>
           <div class="sort">
             <h4 class="sort_title">СОРТИРОВКА: </h4>
+            <ul class="sort_types">
+              <li class="sort_types_item">
+                <input type="radio" name="sort_item" id="types_price" value="sorting" checked>
+                <label for="type_price">ПО ЦЕНЕ</label>
+              </li>
+              <li class="sort_type_item">
+                <input type="radio" name="sort_item" id="types_type" value="sorting">
+                <label for="type_price">ПО ТИПУ</label>
+              </li>
+              <li class="sort_type_item">
+                <input type="radio" name="sort_item" id="types_functional" value="sorting">
+                <label for="type_price">ПО ФУНКЦИОНАЛУ</label>
+              </li>
+            </ul>
           </div>
           <ul class="catalog-list">
             <li class="catalog_list_item">
