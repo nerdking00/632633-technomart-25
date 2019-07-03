@@ -1323,7 +1323,8 @@ input[type="button"]{
   margin-right: 10px;
 }
 
-.page_number_item:nth-child(1){
+.current{
+  color: #ffffff;
   background-color: #ee3643;
 }
 
