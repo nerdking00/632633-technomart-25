@@ -284,6 +284,8 @@ input[type="button"]{
 }
 
 .user-block{
+  margin: 0;
+  margin-top: 11px;
   margin-left: auto;
   text-align: center;
   font-size: 21px;
@@ -493,10 +495,9 @@ input[type="button"]{
 }
 
 .bottom_bar{
-  padding-top: 35px;
+  padding-top: 50px;
   padding-bottom: 53px;
   display: flex;
-  align-items: center;
 }
 
 .bottom_bar_description{
