@@ -31,34 +31,36 @@
             <p class="address">г. Санкт-Петербург,ул. Б.Конюшенная, д.19/8</p>
           </div>
           <div class="when-login">
-        <p class="catalog-user-block">
+        <div class="catalog_user_block">
+          <div class="home"><a class="home-icon" href="index.html"><span class="visually_hidden">Дом</span></a></div>
           <a class="user-display-name" href="#">Александр Сергеевич</a>
-            </p>
+          <div class="logout"><a class="logout-icon" href="#"><span class="visually_hidden">Выход</span></a></div>
+        </div>
             <div class="under-login">
-          <a class="my-orders" href="">Мои заказы</a>
-          <a class="my-account" href="">Личный кабинет</a>
+          <a class="my-orders" href="#">Мои заказы</a>
+          <a class="my-account" href="#">Личный кабинет</a>
         </div>
         </div>
       </div>
       <nav class="container navigation">
-        <ul class="main__nav">
-       <li class="nav__link"><a href="index.html">Главная</a></li>
-       <li class="nav__link"><a href="company.html">Компания</a></li>
-       <li class="nav__link"><a href="catalog.html">Каталог</a></li>
-       <li class="nav__link"><a href="news.html">Новости</a></li>
-       <li class="nav__link"><a href="deals.html">Спецпредложения</a></li>
-       <li class="nav__link"><a href="delivery.html">Доставка</a></li>
-       <li class="nav__link"><a href="contacts.html">Контакты</a></li>
+        <ul class="main_nav">
+       <li class="nav_link"><a href="index.html">Главная</a></li>
+       <li class="nav_link"><a href="company.html">Компания</a></li>
+       <li class="nav_link"><a href="catalog.html">Каталог</a></li>
+       <li class="nav_link"><a href="news.html">Новости</a></li>
+       <li class="nav_link"><a href="deals.html">Спецпредложения</a></li>
+       <li class="nav_link"><a href="delivery.html">Доставка</a></li>
+       <li class="nav_link"><a href="contacts.html">Контакты</a></li>
      </ul>
      </nav>
       </div>
    </header>
   	<main class="container">
       <ul class="breadcrumbs">
-          <li><a class="breadcrumbs-item-home" href="index.html"><span class="visually_hidden">Главная</span></a></li>
-          <li class="breadcrumbs-list"><a class="breadcrumbs-item" href="store.html">Каталог</a></li>
-          <li class="breadcrumbs-list"><a class="breadcrumbs-item" href="tools.html">Инструмент</a></li>
-          <li class="rte breadcrumbs-item-current">Перфораторы</li>
+          <li><a class="breadcrumbs_item-home" href="index.html"><span class="visually_hidden">Главная</span></a></li>
+          <li class="breadcrumbs_list"><a class="breadcrumbs_item" href="store.html">Каталог</a></li>
+          <li class="breadcrumbs_list"><a class="breadcrumbs_item" href="tools.html">Инструмент</a></li>
+          <li class="rte breadcrumbs_item-current">Перфораторы</li>
         </ul>
         <h2 class="page-title">Перфораторы</h2>
         <div class="catalog-container">
@@ -66,7 +68,7 @@
           <div class="filter">
             <h4 class="filters_title">ФИЛЬТР: </h4>
           </div>
-          <form class="filter_range" action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
+          <form class="filter_range" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
             <legend>ЦЕНА:</legend>
             <div class="filter_slide">
@@ -83,24 +85,24 @@
             </fieldset>
           <h2 class="visually_hidden">Фильтр товаров</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="manufaturer">
+            <fieldset class="manufacturer">
               <legend>Производители: </legend>
-            <input class="visually_hidden item-manufacturer__brand" type="checkbox" id="Bosch" name="bosch">
+            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Bosch" name="bosch">
               <label for="Bosch">BOSCH</label>
-            <input class="visually_hidden item-manufacturer__brand" type="checkbox" id="Interskol" name="inter">
+            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Interskol" name="inter">
               <label for="Interskol">Интерскол</label>
-            <input class="visually_hidden item-manufacturer__brand" type="checkbox" id="Makita" name="makita">
+            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Makita" name="makita">
               <label for="Makita">Makita</label>
-            <input class="visually_hidden item-manufacturer__brand" type="checkbox" id="Dewalt" name="Dewalt">
+            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Dewalt" name="Dewalt">
               <label for="Dewalt">Dewalt</label>
-            <input class="visually_hidden item-manufacturer__brand" type="checkbox" id="Hitachi" name="Hitachi">
+            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Hitachi" name="Hitachi">
               <label for="Hitachi">Hitachi</label>
         </fieldset>
          <fieldset class="power-type">
           <legend>Питание: </legend>
-            <input class="visually_hidden item-power__type" type="radio" id="acc" name="power">
+            <input class="visually_hidden item_power_type" type="radio" id="acc" name="power">
             <label for="acc">Аккумуляторные</label>
-            <input class="visually_hidden item-power__type" type="radio" id="power" name="power">
+            <input class="visually_hidden item_power_type" type="radio" id="power" name="power">
             <label for="power">Сетевые</label>
           </fieldset>
           <button class="button-show">Показать</button>
