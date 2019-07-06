@@ -1134,55 +1134,86 @@ input[type="button"]{
   margin-bottom: 21px;
 }
 
-.filter_range fieldset{
+.filter_range{
   border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
 }
 
-.filter_slide{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.range_filter{
+  width: 220px;
+}
+
+.range_controls{
+  position: relative;
+  height: 41px;
   background-color: #f7f3ec;
-  height: 80px;
-  margin-bottom: 9px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.range_output{
-  display: flex;
+.range_controls .scale{
+  height: 2px;
+  background: #d7dcde;
 }
 
-.range_output_left{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.range_controls .bar{
+  width: 70%;
+  height: 2px;
+  background: #63a63e;
+}
+
+.range_controls .toggle{
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range_controls .toggle_min{
+  left: 18px;
+}
+
+.range_controls .toggle_max{
+  left: 140px;
+}
+
+.price_controls{
+  font-size: 0;
+}
+
+.price_controls label{
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price_controls input{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-  background-color: #f7f3ec;
-  width: 95px;
-  height: 38px;
-  margin-right: 30px;
+  text-align: center;
+  color: #000000;
+  width: 75px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
 }
 
-
-.range_output_right{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  background-color: #f7f3ec;
-  width: 95px;
-  height: 38px;
-}
-
-.min_price,
 .max_price{
-  margin: 0;
+  text-align: right;
 }
 
 .sort{

@@ -69,20 +69,23 @@
           <div class="filter">
             <h4 class="filters_title">ФИЛЬТР: </h4>
           </div>
-          <form class="filter_range" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter_range">
             <legend>ЦЕНА:</legend>
-            <div class="filter_slide">
-            <label for="pricecount" class="price"><input name="pricecount" id="pricecount" type="range" min="0" max="30000" step="500"></label>
-          </div>
-            <div class="range_output">
-            <div class="range_output_left">
-              <p class="min_price">0</p>
+            <div class="range_filter">
+          <div class="range_controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <div class="range_output_right">
-              <p class="max_price">30000</p>
-            </div>
+            <div class="toggle toggle_min"></div>
+            <div class="toggle toggle_max"></div>
           </div>
+          <div class="price_controls">
+            <label class="min_price"><input name="min_price" type="text" value="0"></label>
+            <label class="max_price"><input name="max_price" type="text" value="30000"></label>
+          </div>
+        </div>
+      </fieldset>
             </fieldset>
           <h2 class="visually_hidden">Фильтр товаров</h2>
           <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
