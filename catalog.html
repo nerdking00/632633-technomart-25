@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PTSans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles-min.css">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
             <div class="top-bar container">
                 <a class="top-bar__main-logo" href="index.html"><img src="img/main-logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
                 <form class="search-field" action="https://echo.htmlacademy.ru" method="get">
-                    <!-- <label for="search_field"><span class="visually_hidden">Поле поиска</span><label> -->
                     <input class="top-bar__searching" name="searching" id="search_field" placeholder="Поиск:" type="text">
+                    <button type="submit" class="button_search"><span class="visually_hidden">Искать</span></button>
                 </form>
                 <a class="button bookmark-link" href="#">Закладки: <span>0</span></a>
                 <a class="button catalog_cart-link" href="#">Корзина: <span>10</span></a>
@@ -92,31 +92,31 @@
                                 </div>
                             </div>
                         </fieldset>
+                    </form>
+                    <h2 class="visually_hidden">Фильтр товаров</h2>
+                    <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
+                        <fieldset class="manufacturer">
+                            <legend>Производители: </legend>
+                            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Bosch" name="bosch">
+                            <label for="Bosch">BOSCH</label>
+                            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Interskol" name="inter">
+                            <label for="Interskol">Интерскол</label>
+                            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Makita" name="makita">
+                            <label for="Makita">Makita</label>
+                            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Dewalt" name="Dewalt">
+                            <label for="Dewalt">Dewalt</label>
+                            <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Hitachi" name="Hitachi">
+                            <label for="Hitachi">Hitachi</label>
                         </fieldset>
-                        <h2 class="visually_hidden">Фильтр товаров</h2>
-                        <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
-                            <fieldset class="manufacturer">
-                                <legend>Производители: </legend>
-                                <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Bosch" name="bosch">
-                                <label for="Bosch">BOSCH</label>
-                                <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Interskol" name="inter">
-                                <label for="Interskol">Интерскол</label>
-                                <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Makita" name="makita">
-                                <label for="Makita">Makita</label>
-                                <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Dewalt" name="Dewalt">
-                                <label for="Dewalt">Dewalt</label>
-                                <input class="visually_hidden item_manufacturer_brand" type="checkbox" id="Hitachi" name="Hitachi">
-                                <label for="Hitachi">Hitachi</label>
-                            </fieldset>
-                            <fieldset class="power-type">
-                                <legend>Питание: </legend>
-                                <input class="visually_hidden item_power_type" type="radio" id="acc" name="power">
-                                <label for="acc">Аккумуляторные</label>
-                                <input class="visually_hidden item_power_type" type="radio" id="power" name="power">
-                                <label for="power">Сетевые</label>
-                            </fieldset>
-                            <button class="button-show">Показать</button>
-                        </form>
+                        <fieldset class="power-type">
+                            <legend>Питание: </legend>
+                            <input class="visually_hidden item_power_type" type="radio" id="acc" name="power">
+                            <label for="acc">Аккумуляторные</label>
+                            <input class="visually_hidden item_power_type" type="radio" id="power" name="power">
+                            <label for="power">Сетевые</label>
+                        </fieldset>
+                        <button class="button-show">Показать</button>
+                    </form>
                 </section>
                 <section class="catalog">
                     <h2 class="visually_hidden">Список перфораторов</h2>
@@ -133,10 +133,10 @@
                                 <a class="sort_types_functional" href="#" onclick="return false">ПО ФУНКЦИОНАЛУ</a>
                             </li>
                             <li class="sort_direction_up">
-                              <span class="visually_hidden">вверх</span>
+                                <span class="visually_hidden">вверх</span>
                             </li>
                             <li class="sort_direction_down">
-                              <span class="visually_hidden">вниз</span>
+                                <span class="visually_hidden">вниз</span>
                             </li>
                         </ul>
                     </div>
@@ -240,15 +240,18 @@
                             <div class="flag new-flag">new</div>
                         </li>
                     </ul>
-                    <div class="added-to-cart">
+                    <div class="added_to_cart">
                         <div class="item-added">
                             <p>Товар добавлен в корзину!</p>
                             <button class="close-icon" type="button"><span class="visually_hidden">закрыть</span></button>
                         </div>
                         <div class="contninue">
                             <a class="to-cart" href="#">Оформить заказ</a>
-                            <input class="go-buy" type="button" value="Продолжить покупки">
+                            <form class="added_to_cart_form" action="https://echo.htmlacademy.ru" method="post">
+                                <button class="go-buy" type="submit">Продолжить покупки</button>
+                            </form>
                         </div>
+                    </div>
                     <ul class="page_number">
                         <li><a class="page_number_item current" href="#">1</a></li>
                         <li><a class="page_number_item" href="#">2</a></li>
@@ -305,7 +308,6 @@
             </div>
         </div>
     </footer>
-    </div>
 </body>
 
 </html>
