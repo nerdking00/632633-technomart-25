@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PTSans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles-min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
@@ -112,7 +113,7 @@
                                 <a class="button_buy" href="#">Купить</a>
                                 <a class="button_bookmark" href="#">в Закладки</a>
                             </div>
-                            <li class="catalog_list_item promo_item">
+                                <li class="catalog_list_item promo_item">
                                 <img src="img/item-bfg3000.jpg" width="218" height="170" alt="перфоратор BFG3000">
                                 <h3 class="catalog_list_item-name">Перфоратор BOSCH BFG 3000</h3>
                                 <span class="old-price">22500 Р.</span>
@@ -130,7 +131,7 @@
                                         <a class="button_buy" href="#">Купить</a>
                                         <a class="button_bookmark" href="#">в Закладки</a>
                                     </div>
-                                    <li class="catalog_list_item promo_item">
+                                <li class="catalog_list_item promo_item">
                                         <img src="img/item-bfg2000.jpg" width="218" height="170" alt="перфоратор BFG3000">
                                         <h3 class="catalog_list_item-name">Перфоратор BOSCH BFG 2000</h3>
                                         <span class="old-price">22500 Р.</span>
@@ -215,7 +216,11 @@
                                         <p class="credit_show_description">
                                             Залезть в долговую яму стало проще!
                                             <br> Кредитные консультанты придут вам на помощь.
-                                        </p>
+                                            </p>
+                                            <div class="heh">
+                                            <a class="send_request_link" href="#">Отправить заявку</a>
+                                          </div>
+
                                     </li>
                                 </ul>
                             </div>
@@ -227,27 +232,25 @@
                     <section class="bottom-about__delivery">
                         <h2 class="delivery-title">Компания "Техномарт"</h2>
                         <p class="delivery-text">
-                            Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и &nbsp; строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
-                        <div class="middle-container">
+                            Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
                             <p class="delivery-text-second">Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями</p>
                             <ul class="transport-company-names">
                                 <li class="company-title">Деловые линии</li>
                                 <li class="company-title">Автотрейдинг</li>
                                 <li class="company-title">ЖелДорЭкспедиция</li>
                             </ul>
-                        </div>
                         <a class="more-info" href="#">Подробнее о компании</a>
                     </section>
                     <section class="contacts">
                         <h2 class="delivery-title">Контакты</h2>
                         <p class="how-to-find">Вы можете забрать товар сами, заехав в наш офис:</p>
-                        <a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
+                        <a class="map" href="https://yandex.ru/maps/-/CBF9nKAJWA"><img src="img/map.png" width="300" height="158" alt="Офис на карте по адресу Большая Конюшенная д.19"></a>
                         <div class="modal-map">
                             <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="940" height="446"></iframe>
-                            <!-- <img src="img/map.jpg" width="940" height="446" alt="Офис на карте по адресу Большая Конюшенная д.19"> -->
+
                             <button class="modal_close" type="button"><span class="visually_hidden">закрыть</span></button>
                         </div>
-                        <a class="lost" href="#">Заблудились? Напишите нам!</a>
+                        <a class="lost" href="feedback.html">Заблудились? Напишите нам!</a>
 
                         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                             <fieldset class="commentary-form">
@@ -314,32 +317,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        var map = document.querySelector(".map");
-        var popup = document.querySelector(".modal-map");
-        map.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.add("modal_show");
-        });
-        var close = document.querySelector(".modal_close");
-        close.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal_show");
-        });
-        var form = document.querySelector(".lost");
-        var formPopup = document.querySelector(".feedback-form");
-        var formFocus = formPopup.querySelector("[name=name]");
-        form.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            formPopup.classList.add("modal_show");
-            formFocus.focus();
-        });
-        var formClose = formPopup.querySelector(".modal_close");
-        formClose.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            formPopup.classList.remove("modal_show");
-        });
-    </script>
+    <script src="js/script-min.js"></script>
 </body>
 
 </html>
