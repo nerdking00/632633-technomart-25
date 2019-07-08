@@ -327,7 +327,7 @@ input[type="button"] {
 }
 
 .user-block {
-    margin-top: 18px;
+    margin-top: 9px;
     margin-left: auto;
     font-size: 21px;
     line-height: 21px;
@@ -355,15 +355,15 @@ input[type="button"] {
 }
 
 .login-button {
-    padding-top: 14px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 9px;
     padding-left: 48px;
     padding-right: 27px;
 }
 
 .registration-button {
-    padding-top: 14px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 9px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -576,6 +576,7 @@ input[type="button"] {
 .bottom_info {
     display: block;
     margin-left: 71px;
+    margin-top: -2px;
     width: 270px;
     text-transform: none;
     font-size: 21px;
@@ -591,7 +592,7 @@ input[type="button"] {
     position: relative;
     display: block;
     border: 3px solid #ffffff;
-    padding: 6px 40px 11px 72px;
+    padding: 7px 40px 14px 72px;
 }
 
 .bottom_bar_phone:before {
@@ -656,7 +657,7 @@ input[type="button"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 57px;
+    margin-top: 78px;
     margin-bottom: 83px;
 }
 
@@ -2177,7 +2178,7 @@ input[type="button"] {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-bottom: 85px;
+    margin-bottom: 63px;
 }
 
 .manufacturer_block {
@@ -2225,7 +2226,7 @@ input[type="button"] {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 63px;
+    margin-top: 66px;
 }
 
 .main_services {
@@ -2256,7 +2257,7 @@ input[type="button"] {
     font-size: 30px;
     line-height: 30px;
     padding-bottom: 26px;
-    padding-top: 42px;
+    padding-top: 64px;
 }
 
 .main_services_text {
@@ -2352,24 +2353,24 @@ input[type="button"] {
 
 .delivery_show {
     display: block;
-    width: 600px;
+    width: 620px;
     padding-bottom: 100px;
-    background: url("../img/delivery.png") no-repeat 100% 20px;
+    background: url("../img/delivery.png") no-repeat 100% 25px;
 }
 
 .waranty_show {
     display: none;
-    width: 600px;
+    width: 620px;
     padding-bottom: 72px;
-    background: url("../img/guarantee.png") no-repeat 100% 20px;
+    background: url("../img/guarantee.png") no-repeat 100% 25px;
 }
 
 .credit_show {
     display: none;
     overflow: hidden;
-    width: 600px;
+    width: 620px;
     padding-bottom: 78px;
-    background: url("../img/credit.png") no-repeat 100% 20px;
+    background: url("../img/credit.png") no-repeat 100% 25px;
 }
 
 .send_request_link{
